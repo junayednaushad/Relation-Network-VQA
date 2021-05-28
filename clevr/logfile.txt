@@ -1,0 +1,2117 @@
+Loaded hyperparameters from configuration ./config.json, model: original-sd: {'g_layers': [512, 512, 512, 512], 'question_injection_position': 0, 'f_fc1': 512, 'f_fc2': 1024, 'dropout': 0.05, 'lstm_hidden': 256, 'lstm_word_emb': 32, 'rl_in_size': 14}
+Building word dictionaries from all the words in the dataset...
+==> using cached dictionaries: D:\272_project\data\CLEVR\questions\CLEVR_built_dictionaries.pkl
+Word dictionary completed!
+Initializing CLEVR dataset...
+loading questions...
+==> using cached scenes: D:\272_project\data\CLEVR\scenes\CLEVR_trainA_scenes.pkl
+loading questions...
+==> using cached scenes: D:\272_project\data\CLEVR\scenes\CLEVR_valA_scenes.pkl
+CLEVR dataset initialized!
+Supposing original DeepMind model
+Training (151 epochs) is starting...
+Dataset reinitialized with batch size 640
+Current learning rate: 1e-05
+Train Epoch: 1 [0/700160 (0%)] Train loss: 3.3440990447998047
+Train Epoch: 1 [64000/700160 (9%)] Train loss: 2.7869144225120546
+Train Epoch: 1 [128000/700160 (18%)] Train loss: 2.425252363681793
+Train Epoch: 1 [192000/700160 (27%)] Train loss: 1.9875057470798492
+Train Epoch: 1 [256000/700160 (37%)] Train loss: 1.7987715673446656
+Train Epoch: 1 [320000/700160 (46%)] Train loss: 1.7421758663654328
+Train Epoch: 1 [384000/700160 (55%)] Train loss: 1.7002665615081787
+Train Epoch: 1 [448000/700160 (64%)] Train loss: 1.6663171362876892
+Train Epoch: 1 [512000/700160 (73%)] Train loss: 1.6199602019786834
+Train Epoch: 1 [576000/700160 (82%)] Train loss: 1.5718886530399323
+Train Epoch: 1 [640000/700160 (91%)] Train loss: 1.5285013568401338
+Test Epoch 1: Accuracy = 43.17% (64749/150000); Invalids = 21.05% (31578/150000); Test loss = 1.4642463694227503
+exist -- acc: 61.94% (37714/60888); invalid: 1.90% (1157/60888)
+shape -- acc: 25.09% (3234/12891); invalid: 38.17% (4920/12891)
+number -- acc: 39.85% (14180/35579); invalid: 6.28% (2236/35579)
+size -- acc: 35.89% (4691/13071); invalid: 40.60% (5307/13071)
+material -- acc: 35.15% (4922/14001); invalid: 31.67% (4434/14001)
+color -- acc: 0.06% (8/13570); invalid: 99.66% (13524/13570)
+Better accuracy found at epoch: 1
+Saving model
+Current learning rate: 1e-05
+Train Epoch: 2 [0/700160 (0%)] Train loss: 1.4309903383255005
+Train Epoch: 2 [64000/700160 (9%)] Train loss: 1.4729129874706268
+Train Epoch: 2 [128000/700160 (18%)] Train loss: 1.4543462896347046
+Train Epoch: 2 [192000/700160 (27%)] Train loss: 1.4261649298667907
+Train Epoch: 2 [256000/700160 (37%)] Train loss: 1.4065005683898926
+Train Epoch: 2 [320000/700160 (46%)] Train loss: 1.3910393965244294
+Train Epoch: 2 [384000/700160 (55%)] Train loss: 1.3853012883663178
+Train Epoch: 2 [448000/700160 (64%)] Train loss: 1.3551809978485108
+Train Epoch: 2 [512000/700160 (73%)] Train loss: 1.3276325857639313
+Train Epoch: 2 [576000/700160 (82%)] Train loss: 1.3044015848636628
+Train Epoch: 2 [640000/700160 (91%)] Train loss: 1.2885637307167053
+Current learning rate: 1e-05
+Train Epoch: 3 [0/700160 (0%)] Train loss: 1.254440426826477
+Train Epoch: 3 [64000/700160 (9%)] Train loss: 1.213522959947586
+Train Epoch: 3 [128000/700160 (18%)] Train loss: 1.1866782903671265
+Train Epoch: 3 [192000/700160 (27%)] Train loss: 1.1537802493572236
+Train Epoch: 3 [256000/700160 (37%)] Train loss: 1.128785469532013
+Train Epoch: 3 [320000/700160 (46%)] Train loss: 1.121264978647232
+Train Epoch: 3 [384000/700160 (55%)] Train loss: 1.1046803212165832
+Train Epoch: 3 [448000/700160 (64%)] Train loss: 1.098055464029312
+Train Epoch: 3 [512000/700160 (73%)] Train loss: 1.0839691239595413
+Train Epoch: 3 [576000/700160 (82%)] Train loss: 1.0688826888799667
+Train Epoch: 3 [640000/700160 (91%)] Train loss: 1.064774204492569
+Current learning rate: 1e-05
+Train Epoch: 4 [0/700160 (0%)] Train loss: 1.049901008605957
+Train Epoch: 4 [64000/700160 (9%)] Train loss: 1.049374675154686
+Train Epoch: 4 [128000/700160 (18%)] Train loss: 1.0422669607400894
+Train Epoch: 4 [192000/700160 (27%)] Train loss: 1.032951025366783
+Train Epoch: 4 [256000/700160 (37%)] Train loss: 1.0257661777734757
+Train Epoch: 4 [320000/700160 (46%)] Train loss: 1.0244267696142197
+Train Epoch: 4 [384000/700160 (55%)] Train loss: 1.023507327437401
+Train Epoch: 4 [448000/700160 (64%)] Train loss: 1.014206399321556
+Train Epoch: 4 [512000/700160 (73%)] Train loss: 1.0051152503490448
+Train Epoch: 4 [576000/700160 (82%)] Train loss: 1.0076794159412383
+Train Epoch: 4 [640000/700160 (91%)] Train loss: 0.9962372517585755
+Current learning rate: 1e-05
+Train Epoch: 5 [0/700160 (0%)] Train loss: 1.001443862915039
+Train Epoch: 5 [64000/700160 (9%)] Train loss: 0.9887301462888718
+Train Epoch: 5 [128000/700160 (18%)] Train loss: 0.9849859309196473
+Train Epoch: 5 [192000/700160 (27%)] Train loss: 0.9873394417762756
+Train Epoch: 5 [256000/700160 (37%)] Train loss: 0.97553631067276
+Train Epoch: 5 [320000/700160 (46%)] Train loss: 0.9825372326374054
+Train Epoch: 5 [384000/700160 (55%)] Train loss: 0.9759647822380066
+Train Epoch: 5 [448000/700160 (64%)] Train loss: 0.9687500321865081
+Train Epoch: 5 [512000/700160 (73%)] Train loss: 0.972886598110199
+Train Epoch: 5 [576000/700160 (82%)] Train loss: 0.9616336214542389
+Train Epoch: 5 [640000/700160 (91%)] Train loss: 0.9650651091337203
+Current learning rate: 1e-05
+Train Epoch: 6 [0/700160 (0%)] Train loss: 0.9276601672172546
+Train Epoch: 6 [64000/700160 (9%)] Train loss: 0.9587916350364685
+Train Epoch: 6 [128000/700160 (18%)] Train loss: 0.9583272355794906
+Train Epoch: 6 [192000/700160 (27%)] Train loss: 0.9516096657514572
+Train Epoch: 6 [256000/700160 (37%)] Train loss: 0.9517258602380753
+Train Epoch: 6 [320000/700160 (46%)] Train loss: 0.9513889926671982
+Train Epoch: 6 [384000/700160 (55%)] Train loss: 0.9488588577508926
+Train Epoch: 6 [448000/700160 (64%)] Train loss: 0.9476161867380142
+Train Epoch: 6 [512000/700160 (73%)] Train loss: 0.9510703390836716
+Train Epoch: 6 [576000/700160 (82%)] Train loss: 0.9462049037218094
+Train Epoch: 6 [640000/700160 (91%)] Train loss: 0.9387846255302429
+Current learning rate: 1e-05
+Train Epoch: 7 [0/700160 (0%)] Train loss: 0.9433497190475464
+Train Epoch: 7 [64000/700160 (9%)] Train loss: 0.9370093846321106
+Train Epoch: 7 [128000/700160 (18%)] Train loss: 0.9358462959527969
+Train Epoch: 7 [192000/700160 (27%)] Train loss: 0.9402773171663285
+Train Epoch: 7 [256000/700160 (37%)] Train loss: 0.9337610721588134
+Train Epoch: 7 [320000/700160 (46%)] Train loss: 0.9346659481525421
+Train Epoch: 7 [384000/700160 (55%)] Train loss: 0.9263364589214325
+Train Epoch: 7 [448000/700160 (64%)] Train loss: 0.9262700521945954
+Train Epoch: 7 [512000/700160 (73%)] Train loss: 0.9276940184831619
+Train Epoch: 7 [576000/700160 (82%)] Train loss: 0.9286176759004593
+Train Epoch: 7 [640000/700160 (91%)] Train loss: 0.928888212442398
+Current learning rate: 1e-05
+Train Epoch: 8 [0/700160 (0%)] Train loss: 0.8999770283699036
+Train Epoch: 8 [64000/700160 (9%)] Train loss: 0.9218069130182266
+Train Epoch: 8 [128000/700160 (18%)] Train loss: 0.9209623473882675
+Train Epoch: 8 [192000/700160 (27%)] Train loss: 0.9203399580717087
+Train Epoch: 8 [256000/700160 (37%)] Train loss: 0.9231992560625076
+Train Epoch: 8 [320000/700160 (46%)] Train loss: 0.9166553860902786
+Train Epoch: 8 [384000/700160 (55%)] Train loss: 0.9178579860925674
+Train Epoch: 8 [448000/700160 (64%)] Train loss: 0.9151409846544266
+Train Epoch: 8 [512000/700160 (73%)] Train loss: 0.9155996054410934
+Train Epoch: 8 [576000/700160 (82%)] Train loss: 0.9168044924736023
+Train Epoch: 8 [640000/700160 (91%)] Train loss: 0.9129292416572571
+Current learning rate: 1e-05
+Train Epoch: 9 [0/700160 (0%)] Train loss: 0.8787926435470581
+Train Epoch: 9 [64000/700160 (9%)] Train loss: 0.9113280236721039
+Train Epoch: 9 [128000/700160 (18%)] Train loss: 0.9142183637619019
+Train Epoch: 9 [192000/700160 (27%)] Train loss: 0.9072427296638489
+Train Epoch: 9 [256000/700160 (37%)] Train loss: 0.9087632811069488
+Train Epoch: 9 [320000/700160 (46%)] Train loss: 0.9077098798751831
+Train Epoch: 9 [384000/700160 (55%)] Train loss: 0.9062243044376374
+Train Epoch: 9 [448000/700160 (64%)] Train loss: 0.9086725997924805
+Train Epoch: 9 [512000/700160 (73%)] Train loss: 0.9062702769041061
+Train Epoch: 9 [576000/700160 (82%)] Train loss: 0.9021276843547821
+Train Epoch: 9 [640000/700160 (91%)] Train loss: 0.9051843267679215
+Current learning rate: 1e-05
+Train Epoch: 10 [0/700160 (0%)] Train loss: 0.9130086898803711
+Train Epoch: 10 [64000/700160 (9%)] Train loss: 0.904655185341835
+Train Epoch: 10 [128000/700160 (18%)] Train loss: 0.901391441822052
+Train Epoch: 10 [192000/700160 (27%)] Train loss: 0.9033334016799927
+Train Epoch: 10 [256000/700160 (37%)] Train loss: 0.8995154845714569
+Train Epoch: 10 [320000/700160 (46%)] Train loss: 0.9013228744268418
+Train Epoch: 10 [384000/700160 (55%)] Train loss: 0.8968309360742569
+Train Epoch: 10 [448000/700160 (64%)] Train loss: 0.899838165640831
+Train Epoch: 10 [512000/700160 (73%)] Train loss: 0.895646493434906
+Train Epoch: 10 [576000/700160 (82%)] Train loss: 0.8992411929368973
+Train Epoch: 10 [640000/700160 (91%)] Train loss: 0.8905766326189041
+Current learning rate: 1e-05
+Train Epoch: 11 [0/700160 (0%)] Train loss: 0.9109529256820679
+Train Epoch: 11 [64000/700160 (9%)] Train loss: 0.8914539754390717
+Train Epoch: 11 [128000/700160 (18%)] Train loss: 0.8903054732084275
+Train Epoch: 11 [192000/700160 (27%)] Train loss: 0.8914809769392014
+Train Epoch: 11 [256000/700160 (37%)] Train loss: 0.8941345381736755
+Train Epoch: 11 [320000/700160 (46%)] Train loss: 0.8919309610128403
+Train Epoch: 11 [384000/700160 (55%)] Train loss: 0.8908587807416916
+Train Epoch: 11 [448000/700160 (64%)] Train loss: 0.894761238694191
+Train Epoch: 11 [512000/700160 (73%)] Train loss: 0.8875194448232651
+Train Epoch: 11 [576000/700160 (82%)] Train loss: 0.8924089759588242
+Train Epoch: 11 [640000/700160 (91%)] Train loss: 0.8886882323026657
+Test Epoch 11: Accuracy = 56.98% (85471/150000); Invalids = 0.04% (55/150000); Test loss = 0.883232230328499
+exist -- acc: 65.57% (39926/60888); invalid: 0.01% (7/60888)
+shape -- acc: 52.66% (6788/12891); invalid: 0.05% (7/12891)
+number -- acc: 49.39% (17574/35579); invalid: 0.01% (4/35579)
+size -- acc: 65.41% (8550/13071); invalid: 0.05% (6/13071)
+material -- acc: 64.39% (9015/14001); invalid: 0.09% (12/14001)
+color -- acc: 26.66% (3618/13570); invalid: 0.14% (19/13570)
+Better accuracy found at epoch: 11
+Saving model
+Current learning rate: 1e-05
+Train Epoch: 12 [0/700160 (0%)] Train loss: 0.9108993411064148
+Train Epoch: 12 [64000/700160 (9%)] Train loss: 0.8894395303726196
+Train Epoch: 12 [128000/700160 (18%)] Train loss: 0.8842718476057052
+Train Epoch: 12 [192000/700160 (27%)] Train loss: 0.8894528830051422
+Train Epoch: 12 [256000/700160 (37%)] Train loss: 0.8860695391893387
+Train Epoch: 12 [320000/700160 (46%)] Train loss: 0.8860828655958176
+Train Epoch: 12 [384000/700160 (55%)] Train loss: 0.8862118273973465
+Train Epoch: 12 [448000/700160 (64%)] Train loss: 0.8834248125553131
+Train Epoch: 12 [512000/700160 (73%)] Train loss: 0.8834487456083298
+Train Epoch: 12 [576000/700160 (82%)] Train loss: 0.8821950268745422
+Train Epoch: 12 [640000/700160 (91%)] Train loss: 0.8782526677846909
+Current learning rate: 1e-05
+Train Epoch: 13 [0/700160 (0%)] Train loss: 0.8939160108566284
+Train Epoch: 13 [64000/700160 (9%)] Train loss: 0.8828977811336517
+Train Epoch: 13 [128000/700160 (18%)] Train loss: 0.8846747440099716
+Train Epoch: 13 [192000/700160 (27%)] Train loss: 0.8791399794816971
+Train Epoch: 13 [256000/700160 (37%)] Train loss: 0.8846344304084778
+Train Epoch: 13 [320000/700160 (46%)] Train loss: 0.8787323850393295
+Train Epoch: 13 [384000/700160 (55%)] Train loss: 0.8756414568424224
+Train Epoch: 13 [448000/700160 (64%)] Train loss: 0.8820096510648727
+Train Epoch: 13 [512000/700160 (73%)] Train loss: 0.8801572835445404
+Train Epoch: 13 [576000/700160 (82%)] Train loss: 0.8755122739076614
+Train Epoch: 13 [640000/700160 (91%)] Train loss: 0.8738659203052521
+Current learning rate: 1e-05
+Train Epoch: 14 [0/700160 (0%)] Train loss: 0.8577866554260254
+Train Epoch: 14 [64000/700160 (9%)] Train loss: 0.8739088666439057
+Train Epoch: 14 [128000/700160 (18%)] Train loss: 0.8758238941431046
+Train Epoch: 14 [192000/700160 (27%)] Train loss: 0.8774256360530853
+Train Epoch: 14 [256000/700160 (37%)] Train loss: 0.8762699210643768
+Train Epoch: 14 [320000/700160 (46%)] Train loss: 0.8697067844867706
+Train Epoch: 14 [384000/700160 (55%)] Train loss: 0.8773113936185837
+Train Epoch: 14 [448000/700160 (64%)] Train loss: 0.8757511746883392
+Train Epoch: 14 [512000/700160 (73%)] Train loss: 0.8718291670084
+Train Epoch: 14 [576000/700160 (82%)] Train loss: 0.8763990080356598
+Train Epoch: 14 [640000/700160 (91%)] Train loss: 0.875361984372139
+Current learning rate: 1e-05
+Train Epoch: 15 [0/700160 (0%)] Train loss: 0.872226357460022
+Train Epoch: 15 [64000/700160 (9%)] Train loss: 0.8686012399196624
+Train Epoch: 15 [128000/700160 (18%)] Train loss: 0.8674414426088333
+Train Epoch: 15 [192000/700160 (27%)] Train loss: 0.8691365694999695
+Train Epoch: 15 [256000/700160 (37%)] Train loss: 0.8716809183359147
+Train Epoch: 15 [320000/700160 (46%)] Train loss: 0.8700126910209656
+Train Epoch: 15 [384000/700160 (55%)] Train loss: 0.8678288733959199
+Train Epoch: 15 [448000/700160 (64%)] Train loss: 0.8732773828506469
+Train Epoch: 15 [512000/700160 (73%)] Train loss: 0.8715846061706543
+Train Epoch: 15 [576000/700160 (82%)] Train loss: 0.8704755753278732
+Train Epoch: 15 [640000/700160 (91%)] Train loss: 0.8677268618345261
+Current learning rate: 1e-05
+Train Epoch: 16 [0/700160 (0%)] Train loss: 0.8547118902206421
+Train Epoch: 16 [64000/700160 (9%)] Train loss: 0.8704941898584366
+Train Epoch: 16 [128000/700160 (18%)] Train loss: 0.8691189074516297
+Train Epoch: 16 [192000/700160 (27%)] Train loss: 0.862587611079216
+Train Epoch: 16 [256000/700160 (37%)] Train loss: 0.8646971482038498
+Train Epoch: 16 [320000/700160 (46%)] Train loss: 0.8670469290018081
+Train Epoch: 16 [384000/700160 (55%)] Train loss: 0.865110160112381
+Train Epoch: 16 [448000/700160 (64%)] Train loss: 0.8666569727659226
+Train Epoch: 16 [512000/700160 (73%)] Train loss: 0.8677207970619202
+Train Epoch: 16 [576000/700160 (82%)] Train loss: 0.8631074237823486
+Train Epoch: 16 [640000/700160 (91%)] Train loss: 0.8626683223247528
+Current learning rate: 1e-05
+Train Epoch: 17 [0/700160 (0%)] Train loss: 0.8610467910766602
+Train Epoch: 17 [64000/700160 (9%)] Train loss: 0.860892522931099
+Train Epoch: 17 [128000/700160 (18%)] Train loss: 0.856903293132782
+Train Epoch: 17 [192000/700160 (27%)] Train loss: 0.8659244179725647
+Train Epoch: 17 [256000/700160 (37%)] Train loss: 0.8594651073217392
+Train Epoch: 17 [320000/700160 (46%)] Train loss: 0.8619137936830521
+Train Epoch: 17 [384000/700160 (55%)] Train loss: 0.8670009058713913
+Train Epoch: 17 [448000/700160 (64%)] Train loss: 0.8609325617551804
+Train Epoch: 17 [512000/700160 (73%)] Train loss: 0.8606830012798309
+Train Epoch: 17 [576000/700160 (82%)] Train loss: 0.8653360229730606
+Train Epoch: 17 [640000/700160 (91%)] Train loss: 0.8620488280057907
+Current learning rate: 1e-05
+Train Epoch: 18 [0/700160 (0%)] Train loss: 0.8328167200088501
+Train Epoch: 18 [64000/700160 (9%)] Train loss: 0.8599202591180801
+Train Epoch: 18 [128000/700160 (18%)] Train loss: 0.8555221176147461
+Train Epoch: 18 [192000/700160 (27%)] Train loss: 0.8605839413404465
+Train Epoch: 18 [256000/700160 (37%)] Train loss: 0.8633295261859893
+Train Epoch: 18 [320000/700160 (46%)] Train loss: 0.8584374493360519
+Train Epoch: 18 [384000/700160 (55%)] Train loss: 0.8573667240142823
+Train Epoch: 18 [448000/700160 (64%)] Train loss: 0.8570829528570175
+Train Epoch: 18 [512000/700160 (73%)] Train loss: 0.8590508532524109
+Train Epoch: 18 [576000/700160 (82%)] Train loss: 0.8580102556943894
+Train Epoch: 18 [640000/700160 (91%)] Train loss: 0.8597264796495437
+Current learning rate: 1e-05
+Train Epoch: 19 [0/700160 (0%)] Train loss: 0.8396512269973755
+Train Epoch: 19 [64000/700160 (9%)] Train loss: 0.8565931153297425
+Train Epoch: 19 [128000/700160 (18%)] Train loss: 0.8547726011276245
+Train Epoch: 19 [192000/700160 (27%)] Train loss: 0.8576402682065963
+Train Epoch: 19 [256000/700160 (37%)] Train loss: 0.8593441706895828
+Train Epoch: 19 [320000/700160 (46%)] Train loss: 0.8574760216474533
+Train Epoch: 19 [384000/700160 (55%)] Train loss: 0.850433143377304
+Train Epoch: 19 [448000/700160 (64%)] Train loss: 0.8548276436328888
+Train Epoch: 19 [512000/700160 (73%)] Train loss: 0.8555885171890258
+Train Epoch: 19 [576000/700160 (82%)] Train loss: 0.8550867384672165
+Train Epoch: 19 [640000/700160 (91%)] Train loss: 0.8564434307813644
+Dataset reinitialized with batch size 640
+Current learning rate: 2e-05
+Train Epoch: 20 [0/700160 (0%)] Train loss: 0.8393664360046387
+Train Epoch: 20 [64000/700160 (9%)] Train loss: 0.8638471412658691
+Train Epoch: 20 [128000/700160 (18%)] Train loss: 0.8599746435880661
+Train Epoch: 20 [192000/700160 (27%)] Train loss: 0.8599729371070862
+Train Epoch: 20 [256000/700160 (37%)] Train loss: 0.8610070133209229
+Train Epoch: 20 [320000/700160 (46%)] Train loss: 0.8592474776506424
+Train Epoch: 20 [384000/700160 (55%)] Train loss: 0.8608994001150131
+Train Epoch: 20 [448000/700160 (64%)] Train loss: 0.8600166451931
+Train Epoch: 20 [512000/700160 (73%)] Train loss: 0.8559484875202179
+Train Epoch: 20 [576000/700160 (82%)] Train loss: 0.8581954127550125
+Train Epoch: 20 [640000/700160 (91%)] Train loss: 0.8569498974084854
+Current learning rate: 2e-05
+Train Epoch: 21 [0/700160 (0%)] Train loss: 0.8684476017951965
+Train Epoch: 21 [64000/700160 (9%)] Train loss: 0.8528116178512574
+Train Epoch: 21 [128000/700160 (18%)] Train loss: 0.8479218751192092
+Train Epoch: 21 [192000/700160 (27%)] Train loss: 0.8543169820308685
+Train Epoch: 21 [256000/700160 (37%)] Train loss: 0.8527072077989578
+Train Epoch: 21 [320000/700160 (46%)] Train loss: 0.8525378960371017
+Train Epoch: 21 [384000/700160 (55%)] Train loss: 0.8548881220817566
+Train Epoch: 21 [448000/700160 (64%)] Train loss: 0.852459037899971
+Train Epoch: 21 [512000/700160 (73%)] Train loss: 0.8534961980581284
+Train Epoch: 21 [576000/700160 (82%)] Train loss: 0.8545531296730041
+Train Epoch: 21 [640000/700160 (91%)] Train loss: 0.8542143195867539
+Test Epoch 21: Accuracy = 58.01% (87019/150000); Invalids = 0.02% (24/150000); Test loss = 0.8548296451568603
+exist -- acc: 66.14% (40271/60888); invalid: 0.00% (1/60888)
+shape -- acc: 58.43% (7532/12891); invalid: 0.02% (3/12891)
+number -- acc: 49.85% (17737/35579); invalid: 0.00% (1/35579)
+size -- acc: 66.19% (8652/13071); invalid: 0.08% (11/13071)
+material -- acc: 62.75% (8786/14001); invalid: 0.03% (4/14001)
+color -- acc: 29.78% (4041/13570); invalid: 0.03% (4/13570)
+Better accuracy found at epoch: 21
+Saving model
+Current learning rate: 2e-05
+Train Epoch: 22 [0/700160 (0%)] Train loss: 0.8983709216117859
+Train Epoch: 22 [64000/700160 (9%)] Train loss: 0.8522601801156998
+Train Epoch: 22 [128000/700160 (18%)] Train loss: 0.8525709986686707
+Train Epoch: 22 [192000/700160 (27%)] Train loss: 0.8469143933057786
+Train Epoch: 22 [256000/700160 (37%)] Train loss: 0.8478852838277817
+Train Epoch: 22 [320000/700160 (46%)] Train loss: 0.8475912988185883
+Train Epoch: 22 [384000/700160 (55%)] Train loss: 0.8496588438749313
+Train Epoch: 22 [448000/700160 (64%)] Train loss: 0.8517733687162399
+Train Epoch: 22 [512000/700160 (73%)] Train loss: 0.8506551486253738
+Train Epoch: 22 [576000/700160 (82%)] Train loss: 0.8459658169746399
+Train Epoch: 22 [640000/700160 (91%)] Train loss: 0.8512710422277451
+Current learning rate: 2e-05
+Train Epoch: 23 [0/700160 (0%)] Train loss: 0.8341397047042847
+Train Epoch: 23 [64000/700160 (9%)] Train loss: 0.8376162260770798
+Train Epoch: 23 [128000/700160 (18%)] Train loss: 0.8436881077289581
+Train Epoch: 23 [192000/700160 (27%)] Train loss: 0.8451453417539596
+Train Epoch: 23 [256000/700160 (37%)] Train loss: 0.8431329709291459
+Train Epoch: 23 [320000/700160 (46%)] Train loss: 0.8495666950941085
+Train Epoch: 23 [384000/700160 (55%)] Train loss: 0.8485941100120544
+Train Epoch: 23 [448000/700160 (64%)] Train loss: 0.8452821761369705
+Train Epoch: 23 [512000/700160 (73%)] Train loss: 0.8447507178783417
+Train Epoch: 23 [576000/700160 (82%)] Train loss: 0.8423551881313324
+Train Epoch: 23 [640000/700160 (91%)] Train loss: 0.8461700445413589
+Current learning rate: 2e-05
+Train Epoch: 24 [0/700160 (0%)] Train loss: 0.8535855412483215
+Train Epoch: 24 [64000/700160 (9%)] Train loss: 0.8466984075307846
+Train Epoch: 24 [128000/700160 (18%)] Train loss: 0.847510672211647
+Train Epoch: 24 [192000/700160 (27%)] Train loss: 0.8420413988828659
+Train Epoch: 24 [256000/700160 (37%)] Train loss: 0.8384959173202514
+Train Epoch: 24 [320000/700160 (46%)] Train loss: 0.8449808073043823
+Train Epoch: 24 [384000/700160 (55%)] Train loss: 0.8424840921163559
+Train Epoch: 24 [448000/700160 (64%)] Train loss: 0.8394889992475509
+Train Epoch: 24 [512000/700160 (73%)] Train loss: 0.8402663522958755
+Train Epoch: 24 [576000/700160 (82%)] Train loss: 0.8372048658132553
+Train Epoch: 24 [640000/700160 (91%)] Train loss: 0.8408290964365005
+Current learning rate: 2e-05
+Train Epoch: 25 [0/700160 (0%)] Train loss: 0.8473159074783325
+Train Epoch: 25 [64000/700160 (9%)] Train loss: 0.8411970561742783
+Train Epoch: 25 [128000/700160 (18%)] Train loss: 0.8417025905847549
+Train Epoch: 25 [192000/700160 (27%)] Train loss: 0.8394205367565155
+Train Epoch: 25 [256000/700160 (37%)] Train loss: 0.8409048062562943
+Train Epoch: 25 [320000/700160 (46%)] Train loss: 0.8363592374324799
+Train Epoch: 25 [384000/700160 (55%)] Train loss: 0.8340390276908874
+Train Epoch: 25 [448000/700160 (64%)] Train loss: 0.8388014125823975
+Train Epoch: 25 [512000/700160 (73%)] Train loss: 0.8384862834215164
+Train Epoch: 25 [576000/700160 (82%)] Train loss: 0.8358586579561234
+Train Epoch: 25 [640000/700160 (91%)] Train loss: 0.8384540295600891
+Current learning rate: 2e-05
+Train Epoch: 26 [0/700160 (0%)] Train loss: 0.8789022564888
+Train Epoch: 26 [64000/700160 (9%)] Train loss: 0.8365373361110687
+Train Epoch: 26 [128000/700160 (18%)] Train loss: 0.8367131316661834
+Train Epoch: 26 [192000/700160 (27%)] Train loss: 0.8405607163906097
+Train Epoch: 26 [256000/700160 (37%)] Train loss: 0.830861724615097
+Train Epoch: 26 [320000/700160 (46%)] Train loss: 0.8343016159534454
+Train Epoch: 26 [384000/700160 (55%)] Train loss: 0.8333023428916931
+Train Epoch: 26 [448000/700160 (64%)] Train loss: 0.8324592220783233
+Train Epoch: 26 [512000/700160 (73%)] Train loss: 0.8354967254400253
+Train Epoch: 26 [576000/700160 (82%)] Train loss: 0.8303112632036209
+Train Epoch: 26 [640000/700160 (91%)] Train loss: 0.8347968912124634
+Current learning rate: 2e-05
+Train Epoch: 27 [0/700160 (0%)] Train loss: 0.8132795095443726
+Train Epoch: 27 [64000/700160 (9%)] Train loss: 0.8332018226385116
+Train Epoch: 27 [128000/700160 (18%)] Train loss: 0.8326880270242691
+Train Epoch: 27 [192000/700160 (27%)] Train loss: 0.8342026633024215
+Train Epoch: 27 [256000/700160 (37%)] Train loss: 0.8325745111703873
+Train Epoch: 27 [320000/700160 (46%)] Train loss: 0.8278276127576828
+Train Epoch: 27 [384000/700160 (55%)] Train loss: 0.8335064977407456
+Train Epoch: 27 [448000/700160 (64%)] Train loss: 0.8336554163694382
+Train Epoch: 27 [512000/700160 (73%)] Train loss: 0.8320685797929763
+Train Epoch: 27 [576000/700160 (82%)] Train loss: 0.8345841872692108
+Train Epoch: 27 [640000/700160 (91%)] Train loss: 0.8307670390605927
+Current learning rate: 2e-05
+Train Epoch: 28 [0/700160 (0%)] Train loss: 0.807915985584259
+Train Epoch: 28 [64000/700160 (9%)] Train loss: 0.8323156785964966
+Train Epoch: 28 [128000/700160 (18%)] Train loss: 0.8289534360170364
+Train Epoch: 28 [192000/700160 (27%)] Train loss: 0.8322322100400925
+Train Epoch: 28 [256000/700160 (37%)] Train loss: 0.8260045063495636
+Train Epoch: 28 [320000/700160 (46%)] Train loss: 0.8309640324115753
+Train Epoch: 28 [384000/700160 (55%)] Train loss: 0.8295901042222976
+Train Epoch: 28 [448000/700160 (64%)] Train loss: 0.8256650000810624
+Train Epoch: 28 [512000/700160 (73%)] Train loss: 0.8241185563802719
+Train Epoch: 28 [576000/700160 (82%)] Train loss: 0.826593102812767
+Train Epoch: 28 [640000/700160 (91%)] Train loss: 0.830622426867485
+Current learning rate: 2e-05
+Train Epoch: 29 [0/700160 (0%)] Train loss: 0.848220705986023
+Train Epoch: 29 [64000/700160 (9%)] Train loss: 0.8248831921815872
+Train Epoch: 29 [128000/700160 (18%)] Train loss: 0.8217889827489853
+Train Epoch: 29 [192000/700160 (27%)] Train loss: 0.8249255788326263
+Train Epoch: 29 [256000/700160 (37%)] Train loss: 0.8278738206624985
+Train Epoch: 29 [320000/700160 (46%)] Train loss: 0.8228754687309265
+Train Epoch: 29 [384000/700160 (55%)] Train loss: 0.8249276340007782
+Train Epoch: 29 [448000/700160 (64%)] Train loss: 0.8241831290721894
+Train Epoch: 29 [512000/700160 (73%)] Train loss: 0.8276492983102799
+Train Epoch: 29 [576000/700160 (82%)] Train loss: 0.8293730717897415
+Train Epoch: 29 [640000/700160 (91%)] Train loss: 0.8271681797504425
+Current learning rate: 2e-05
+Train Epoch: 30 [0/700160 (0%)] Train loss: 0.8115482330322266
+Train Epoch: 30 [64000/700160 (9%)] Train loss: 0.8235844135284424
+Train Epoch: 30 [128000/700160 (18%)] Train loss: 0.8231163674592972
+Train Epoch: 30 [192000/700160 (27%)] Train loss: 0.8221853250265121
+Train Epoch: 30 [256000/700160 (37%)] Train loss: 0.8232391113042832
+Train Epoch: 30 [320000/700160 (46%)] Train loss: 0.8244548469781876
+Train Epoch: 30 [384000/700160 (55%)] Train loss: 0.8187334007024765
+Train Epoch: 30 [448000/700160 (64%)] Train loss: 0.827532479763031
+Train Epoch: 30 [512000/700160 (73%)] Train loss: 0.8209218448400497
+Train Epoch: 30 [576000/700160 (82%)] Train loss: 0.8221916508674622
+Train Epoch: 30 [640000/700160 (91%)] Train loss: 0.823996639251709
+Current learning rate: 2e-05
+Train Epoch: 31 [0/700160 (0%)] Train loss: 0.8315349817276001
+Train Epoch: 31 [64000/700160 (9%)] Train loss: 0.8232016438245773
+Train Epoch: 31 [128000/700160 (18%)] Train loss: 0.824673377275467
+Train Epoch: 31 [192000/700160 (27%)] Train loss: 0.8203484910726547
+Train Epoch: 31 [256000/700160 (37%)] Train loss: 0.8188895964622498
+Train Epoch: 31 [320000/700160 (46%)] Train loss: 0.8204676747322083
+Train Epoch: 31 [384000/700160 (55%)] Train loss: 0.824550057053566
+Train Epoch: 31 [448000/700160 (64%)] Train loss: 0.8197779846191406
+Train Epoch: 31 [512000/700160 (73%)] Train loss: 0.8195338118076324
+Train Epoch: 31 [576000/700160 (82%)] Train loss: 0.8177712076902389
+Train Epoch: 31 [640000/700160 (91%)] Train loss: 0.8166451907157898
+Test Epoch 31: Accuracy = 59.68% (89519/150000); Invalids = 0.00% (3/150000); Test loss = 0.8207165855042478
+exist -- acc: 67.57% (41141/60888); invalid: 0.00% (0/60888)
+shape -- acc: 62.77% (8092/12891); invalid: 0.00% (0/12891)
+number -- acc: 50.73% (18049/35579); invalid: 0.00% (0/35579)
+size -- acc: 66.45% (8686/13071); invalid: 0.02% (2/13071)
+material -- acc: 65.64% (9190/14001); invalid: 0.01% (1/14001)
+color -- acc: 32.14% (4361/13570); invalid: 0.00% (0/13570)
+Better accuracy found at epoch: 31
+Saving model
+Current learning rate: 2e-05
+Train Epoch: 32 [0/700160 (0%)] Train loss: 0.8181643486022949
+Train Epoch: 32 [64000/700160 (9%)] Train loss: 0.8210586667060852
+Train Epoch: 32 [128000/700160 (18%)] Train loss: 0.8178703439235687
+Train Epoch: 32 [192000/700160 (27%)] Train loss: 0.8194068849086762
+Train Epoch: 32 [256000/700160 (37%)] Train loss: 0.8158825707435607
+Train Epoch: 32 [320000/700160 (46%)] Train loss: 0.8205870723724366
+Train Epoch: 32 [384000/700160 (55%)] Train loss: 0.8171991837024689
+Train Epoch: 32 [448000/700160 (64%)] Train loss: 0.8164910471439362
+Train Epoch: 32 [512000/700160 (73%)] Train loss: 0.812825911641121
+Train Epoch: 32 [576000/700160 (82%)] Train loss: 0.8191768556833268
+Train Epoch: 32 [640000/700160 (91%)] Train loss: 0.8163555008172989
+Current learning rate: 2e-05
+Train Epoch: 33 [0/700160 (0%)] Train loss: 0.8701960444450378
+Train Epoch: 33 [64000/700160 (9%)] Train loss: 0.813929101228714
+Train Epoch: 33 [128000/700160 (18%)] Train loss: 0.8197793596982956
+Train Epoch: 33 [192000/700160 (27%)] Train loss: 0.8175458705425263
+Train Epoch: 33 [256000/700160 (37%)] Train loss: 0.8179214727878571
+Train Epoch: 33 [320000/700160 (46%)] Train loss: 0.8126733058691025
+Train Epoch: 33 [384000/700160 (55%)] Train loss: 0.8135477232933045
+Train Epoch: 33 [448000/700160 (64%)] Train loss: 0.8104022765159606
+Train Epoch: 33 [512000/700160 (73%)] Train loss: 0.8115811425447464
+Train Epoch: 33 [576000/700160 (82%)] Train loss: 0.8156438791751861
+Train Epoch: 33 [640000/700160 (91%)] Train loss: 0.8139942461252212
+Current learning rate: 2e-05
+Train Epoch: 34 [0/700160 (0%)] Train loss: 0.7714344263076782
+Train Epoch: 34 [64000/700160 (9%)] Train loss: 0.8107560330629349
+Train Epoch: 34 [128000/700160 (18%)] Train loss: 0.8164671105146408
+Train Epoch: 34 [192000/700160 (27%)] Train loss: 0.8110728460550308
+Train Epoch: 34 [256000/700160 (37%)] Train loss: 0.8160838675498963
+Train Epoch: 34 [320000/700160 (46%)] Train loss: 0.8082828712463379
+Train Epoch: 34 [384000/700160 (55%)] Train loss: 0.8114293617010117
+Train Epoch: 34 [448000/700160 (64%)] Train loss: 0.8087656569480896
+Train Epoch: 34 [512000/700160 (73%)] Train loss: 0.8133088093996048
+Train Epoch: 34 [576000/700160 (82%)] Train loss: 0.8097403055429458
+Train Epoch: 34 [640000/700160 (91%)] Train loss: 0.8110933434963227
+Current learning rate: 2e-05
+Train Epoch: 35 [0/700160 (0%)] Train loss: 0.8341520428657532
+Train Epoch: 35 [64000/700160 (9%)] Train loss: 0.8077311563491821
+Train Epoch: 35 [128000/700160 (18%)] Train loss: 0.8077927821874619
+Train Epoch: 35 [192000/700160 (27%)] Train loss: 0.8065765249729157
+Train Epoch: 35 [256000/700160 (37%)] Train loss: 0.8110765129327774
+Train Epoch: 35 [320000/700160 (46%)] Train loss: 0.8068500798940659
+Train Epoch: 35 [384000/700160 (55%)] Train loss: 0.810432088971138
+Train Epoch: 35 [448000/700160 (64%)] Train loss: 0.8122213363647461
+Train Epoch: 35 [512000/700160 (73%)] Train loss: 0.8073099702596664
+Train Epoch: 35 [576000/700160 (82%)] Train loss: 0.8095411914587021
+Train Epoch: 35 [640000/700160 (91%)] Train loss: 0.8062459510564804
+Current learning rate: 2e-05
+Train Epoch: 36 [0/700160 (0%)] Train loss: 0.8345199823379517
+Train Epoch: 36 [64000/700160 (9%)] Train loss: 0.8041794550418854
+Train Epoch: 36 [128000/700160 (18%)] Train loss: 0.8060258889198303
+Train Epoch: 36 [192000/700160 (27%)] Train loss: 0.8095586162805557
+Train Epoch: 36 [256000/700160 (37%)] Train loss: 0.806295605301857
+Train Epoch: 36 [320000/700160 (46%)] Train loss: 0.8077725291252136
+Train Epoch: 36 [384000/700160 (55%)] Train loss: 0.809125771522522
+Train Epoch: 36 [448000/700160 (64%)] Train loss: 0.8041015774011612
+Train Epoch: 36 [512000/700160 (73%)] Train loss: 0.805300829410553
+Train Epoch: 36 [576000/700160 (82%)] Train loss: 0.8035145246982575
+Train Epoch: 36 [640000/700160 (91%)] Train loss: 0.8042628645896912
+Current learning rate: 2e-05
+Train Epoch: 37 [0/700160 (0%)] Train loss: 0.819808304309845
+Train Epoch: 37 [64000/700160 (9%)] Train loss: 0.8017837369441986
+Train Epoch: 37 [128000/700160 (18%)] Train loss: 0.8066869437694549
+Train Epoch: 37 [192000/700160 (27%)] Train loss: 0.8099354243278504
+Train Epoch: 37 [256000/700160 (37%)] Train loss: 0.8033851653337478
+Train Epoch: 37 [320000/700160 (46%)] Train loss: 0.8028352147340775
+Train Epoch: 37 [384000/700160 (55%)] Train loss: 0.8018138372898101
+Train Epoch: 37 [448000/700160 (64%)] Train loss: 0.8036458158493042
+Train Epoch: 37 [512000/700160 (73%)] Train loss: 0.8034016799926758
+Train Epoch: 37 [576000/700160 (82%)] Train loss: 0.799477766752243
+Train Epoch: 37 [640000/700160 (91%)] Train loss: 0.7993936258554458
+Current learning rate: 2e-05
+Train Epoch: 38 [0/700160 (0%)] Train loss: 0.7776686549186707
+Train Epoch: 38 [64000/700160 (9%)] Train loss: 0.799710533618927
+Train Epoch: 38 [128000/700160 (18%)] Train loss: 0.7967287230491639
+Train Epoch: 38 [192000/700160 (27%)] Train loss: 0.798067860007286
+Train Epoch: 38 [256000/700160 (37%)] Train loss: 0.8005186551809311
+Train Epoch: 38 [320000/700160 (46%)] Train loss: 0.8001149046421051
+Train Epoch: 38 [384000/700160 (55%)] Train loss: 0.8009168726205825
+Train Epoch: 38 [448000/700160 (64%)] Train loss: 0.7991254091262817
+Train Epoch: 38 [512000/700160 (73%)] Train loss: 0.7985828906297684
+Train Epoch: 38 [576000/700160 (82%)] Train loss: 0.8012048810720444
+Train Epoch: 38 [640000/700160 (91%)] Train loss: 0.8027294838428497
+Current learning rate: 2e-05
+Train Epoch: 39 [0/700160 (0%)] Train loss: 0.7817023992538452
+Train Epoch: 39 [64000/700160 (9%)] Train loss: 0.7974499195814133
+Train Epoch: 39 [128000/700160 (18%)] Train loss: 0.799237916469574
+Train Epoch: 39 [192000/700160 (27%)] Train loss: 0.7982928794622421
+Train Epoch: 39 [256000/700160 (37%)] Train loss: 0.7994899791479111
+Train Epoch: 39 [320000/700160 (46%)] Train loss: 0.7933063977956771
+Train Epoch: 39 [384000/700160 (55%)] Train loss: 0.7984901428222656
+Train Epoch: 39 [448000/700160 (64%)] Train loss: 0.79469309091568
+Train Epoch: 39 [512000/700160 (73%)] Train loss: 0.805056020617485
+Train Epoch: 39 [576000/700160 (82%)] Train loss: 0.7964651036262512
+Train Epoch: 39 [640000/700160 (91%)] Train loss: 0.7961021381616592
+Dataset reinitialized with batch size 640
+Current learning rate: 4e-05
+Train Epoch: 40 [0/700160 (0%)] Train loss: 0.794934868812561
+Train Epoch: 40 [64000/700160 (9%)] Train loss: 0.798857513666153
+Train Epoch: 40 [128000/700160 (18%)] Train loss: 0.8058653604984284
+Train Epoch: 40 [192000/700160 (27%)] Train loss: 0.8031784600019455
+Train Epoch: 40 [256000/700160 (37%)] Train loss: 0.8054549610614776
+Train Epoch: 40 [320000/700160 (46%)] Train loss: 0.8063620209693909
+Train Epoch: 40 [384000/700160 (55%)] Train loss: 0.8007417404651642
+Train Epoch: 40 [448000/700160 (64%)] Train loss: 0.8086132901906967
+Train Epoch: 40 [512000/700160 (73%)] Train loss: 0.8033396816253662
+Train Epoch: 40 [576000/700160 (82%)] Train loss: 0.8008031016588211
+Train Epoch: 40 [640000/700160 (91%)] Train loss: 0.7991577517986298
+Current learning rate: 4e-05
+Train Epoch: 41 [0/700160 (0%)] Train loss: 0.8632735013961792
+Train Epoch: 41 [64000/700160 (9%)] Train loss: 0.7973754179477691
+Train Epoch: 41 [128000/700160 (18%)] Train loss: 0.7991228097677231
+Train Epoch: 41 [192000/700160 (27%)] Train loss: 0.7991876798868179
+Train Epoch: 41 [256000/700160 (37%)] Train loss: 0.7986168676614761
+Train Epoch: 41 [320000/700160 (46%)] Train loss: 0.8014004784822464
+Train Epoch: 41 [384000/700160 (55%)] Train loss: 0.7930263620615006
+Train Epoch: 41 [448000/700160 (64%)] Train loss: 0.8039749157428742
+Train Epoch: 41 [512000/700160 (73%)] Train loss: 0.7902086478471756
+Train Epoch: 41 [576000/700160 (82%)] Train loss: 0.7950701653957367
+Train Epoch: 41 [640000/700160 (91%)] Train loss: 0.7980596148967742
+Test Epoch 41: Accuracy = 61.16% (91746/150000); Invalids = 0.00% (2/150000); Test loss = 0.8024919449014867
+exist -- acc: 70.00% (42623/60888); invalid: 0.00% (1/60888)
+shape -- acc: 63.53% (8190/12891); invalid: 0.01% (1/12891)
+number -- acc: 51.38% (18281/35579); invalid: 0.00% (0/35579)
+size -- acc: 66.61% (8706/13071); invalid: 0.00% (0/13071)
+material -- acc: 64.67% (9055/14001); invalid: 0.00% (0/14001)
+color -- acc: 36.04% (4891/13570); invalid: 0.00% (0/13570)
+Better accuracy found at epoch: 41
+Saving model
+Current learning rate: 4e-05
+Train Epoch: 42 [0/700160 (0%)] Train loss: 0.7696026563644409
+Train Epoch: 42 [64000/700160 (9%)] Train loss: 0.7976016467809677
+Train Epoch: 42 [128000/700160 (18%)] Train loss: 0.7960299903154373
+Train Epoch: 42 [192000/700160 (27%)] Train loss: 0.7984577131271362
+Train Epoch: 42 [256000/700160 (37%)] Train loss: 0.7908681708574296
+Train Epoch: 42 [320000/700160 (46%)] Train loss: 0.7891204452514649
+Train Epoch: 42 [384000/700160 (55%)] Train loss: 0.791338649392128
+Train Epoch: 42 [448000/700160 (64%)] Train loss: 0.7895310640335083
+Train Epoch: 42 [512000/700160 (73%)] Train loss: 0.787983056306839
+Train Epoch: 42 [576000/700160 (82%)] Train loss: 0.7903405719995499
+Train Epoch: 42 [640000/700160 (91%)] Train loss: 0.7911214679479599
+Current learning rate: 4e-05
+Train Epoch: 43 [0/700160 (0%)] Train loss: 0.7597943544387817
+Train Epoch: 43 [64000/700160 (9%)] Train loss: 0.785547388792038
+Train Epoch: 43 [128000/700160 (18%)] Train loss: 0.7911156308650971
+Train Epoch: 43 [192000/700160 (27%)] Train loss: 0.7849030619859696
+Train Epoch: 43 [256000/700160 (37%)] Train loss: 0.7933323365449906
+Train Epoch: 43 [320000/700160 (46%)] Train loss: 0.7868794274330139
+Train Epoch: 43 [384000/700160 (55%)] Train loss: 0.7823656117916107
+Train Epoch: 43 [448000/700160 (64%)] Train loss: 0.7854135346412658
+Train Epoch: 43 [512000/700160 (73%)] Train loss: 0.7878167003393173
+Train Epoch: 43 [576000/700160 (82%)] Train loss: 0.7885965371131897
+Train Epoch: 43 [640000/700160 (91%)] Train loss: 0.7914240437746048
+Current learning rate: 4e-05
+Train Epoch: 44 [0/700160 (0%)] Train loss: 0.8012321591377258
+Train Epoch: 44 [64000/700160 (9%)] Train loss: 0.7872097581624985
+Train Epoch: 44 [128000/700160 (18%)] Train loss: 0.7816320520639419
+Train Epoch: 44 [192000/700160 (27%)] Train loss: 0.7845476979017257
+Train Epoch: 44 [256000/700160 (37%)] Train loss: 0.783938313126564
+Train Epoch: 44 [320000/700160 (46%)] Train loss: 0.781004192829132
+Train Epoch: 44 [384000/700160 (55%)] Train loss: 0.7783001881837844
+Train Epoch: 44 [448000/700160 (64%)] Train loss: 0.7803518378734589
+Train Epoch: 44 [512000/700160 (73%)] Train loss: 0.7882788956165314
+Train Epoch: 44 [576000/700160 (82%)] Train loss: 0.781568883061409
+Train Epoch: 44 [640000/700160 (91%)] Train loss: 0.7832302212715149
+Current learning rate: 4e-05
+Train Epoch: 45 [0/700160 (0%)] Train loss: 0.8165539503097534
+Train Epoch: 45 [64000/700160 (9%)] Train loss: 0.7801928001642228
+Train Epoch: 45 [128000/700160 (18%)] Train loss: 0.7750326722860337
+Train Epoch: 45 [192000/700160 (27%)] Train loss: 0.7770267444849014
+Train Epoch: 45 [256000/700160 (37%)] Train loss: 0.7735539442300796
+Train Epoch: 45 [320000/700160 (46%)] Train loss: 0.7788187211751938
+Train Epoch: 45 [384000/700160 (55%)] Train loss: 0.7780086785554886
+Train Epoch: 45 [448000/700160 (64%)] Train loss: 0.7764558130502701
+Train Epoch: 45 [512000/700160 (73%)] Train loss: 0.7839361429214478
+Train Epoch: 45 [576000/700160 (82%)] Train loss: 0.7812339144945145
+Train Epoch: 45 [640000/700160 (91%)] Train loss: 0.7779874587059021
+Current learning rate: 4e-05
+Train Epoch: 46 [0/700160 (0%)] Train loss: 0.7667384147644043
+Train Epoch: 46 [64000/700160 (9%)] Train loss: 0.7750775277614593
+Train Epoch: 46 [128000/700160 (18%)] Train loss: 0.7716908675432205
+Train Epoch: 46 [192000/700160 (27%)] Train loss: 0.7737001901865006
+Train Epoch: 46 [256000/700160 (37%)] Train loss: 0.7758672964572907
+Train Epoch: 46 [320000/700160 (46%)] Train loss: 0.7719833463430404
+Train Epoch: 46 [384000/700160 (55%)] Train loss: 0.7751422733068466
+Train Epoch: 46 [448000/700160 (64%)] Train loss: 0.7798941934108734
+Train Epoch: 46 [512000/700160 (73%)] Train loss: 0.7716105890274048
+Train Epoch: 46 [576000/700160 (82%)] Train loss: 0.7722650730609893
+Train Epoch: 46 [640000/700160 (91%)] Train loss: 0.7708941340446472
+Current learning rate: 4e-05
+Train Epoch: 47 [0/700160 (0%)] Train loss: 0.7871500849723816
+Train Epoch: 47 [64000/700160 (9%)] Train loss: 0.7686700344085693
+Train Epoch: 47 [128000/700160 (18%)] Train loss: 0.7666827756166458
+Train Epoch: 47 [192000/700160 (27%)] Train loss: 0.7695647591352462
+Train Epoch: 47 [256000/700160 (37%)] Train loss: 0.7663943177461624
+Train Epoch: 47 [320000/700160 (46%)] Train loss: 0.7739322996139526
+Train Epoch: 47 [384000/700160 (55%)] Train loss: 0.7669985210895538
+Train Epoch: 47 [448000/700160 (64%)] Train loss: 0.7668088752031327
+Train Epoch: 47 [512000/700160 (73%)] Train loss: 0.7655154603719712
+Train Epoch: 47 [576000/700160 (82%)] Train loss: 0.7718116700649261
+Train Epoch: 47 [640000/700160 (91%)] Train loss: 0.7686247473955155
+Current learning rate: 4e-05
+Train Epoch: 48 [0/700160 (0%)] Train loss: 0.7909826040267944
+Train Epoch: 48 [64000/700160 (9%)] Train loss: 0.7697323381900787
+Train Epoch: 48 [128000/700160 (18%)] Train loss: 0.7613839501142502
+Train Epoch: 48 [192000/700160 (27%)] Train loss: 0.7621817910671234
+Train Epoch: 48 [256000/700160 (37%)] Train loss: 0.7644223445653915
+Train Epoch: 48 [320000/700160 (46%)] Train loss: 0.7630596476793289
+Train Epoch: 48 [384000/700160 (55%)] Train loss: 0.7651299387216568
+Train Epoch: 48 [448000/700160 (64%)] Train loss: 0.7619284570217133
+Train Epoch: 48 [512000/700160 (73%)] Train loss: 0.7617493200302125
+Train Epoch: 48 [576000/700160 (82%)] Train loss: 0.7598402273654937
+Train Epoch: 48 [640000/700160 (91%)] Train loss: 0.7600760227441787
+Current learning rate: 4e-05
+Train Epoch: 49 [0/700160 (0%)] Train loss: 0.7338749170303345
+Train Epoch: 49 [64000/700160 (9%)] Train loss: 0.7589379572868347
+Train Epoch: 49 [128000/700160 (18%)] Train loss: 0.755459128022194
+Train Epoch: 49 [192000/700160 (27%)] Train loss: 0.7575377297401428
+Train Epoch: 49 [256000/700160 (37%)] Train loss: 0.7600301867723465
+Train Epoch: 49 [320000/700160 (46%)] Train loss: 0.7533062082529068
+Train Epoch: 49 [384000/700160 (55%)] Train loss: 0.7549112492799759
+Train Epoch: 49 [448000/700160 (64%)] Train loss: 0.7549834817647934
+Train Epoch: 49 [512000/700160 (73%)] Train loss: 0.753738534450531
+Train Epoch: 49 [576000/700160 (82%)] Train loss: 0.7523591738939285
+Train Epoch: 49 [640000/700160 (91%)] Train loss: 0.7570824766159058
+Current learning rate: 4e-05
+Train Epoch: 50 [0/700160 (0%)] Train loss: 0.7432440519332886
+Train Epoch: 50 [64000/700160 (9%)] Train loss: 0.7521876204013824
+Train Epoch: 50 [128000/700160 (18%)] Train loss: 0.7537762600183487
+Train Epoch: 50 [192000/700160 (27%)] Train loss: 0.7469316363334656
+Train Epoch: 50 [256000/700160 (37%)] Train loss: 0.751228221654892
+Train Epoch: 50 [320000/700160 (46%)] Train loss: 0.7514955425262451
+Train Epoch: 50 [384000/700160 (55%)] Train loss: 0.7530239021778107
+Train Epoch: 50 [448000/700160 (64%)] Train loss: 0.7446638232469559
+Train Epoch: 50 [512000/700160 (73%)] Train loss: 0.7478435009717941
+Train Epoch: 50 [576000/700160 (82%)] Train loss: 0.7493127340078354
+Train Epoch: 50 [640000/700160 (91%)] Train loss: 0.7480262637138366
+Current learning rate: 4e-05
+Train Epoch: 51 [0/700160 (0%)] Train loss: 0.7766698598861694
+Train Epoch: 51 [64000/700160 (9%)] Train loss: 0.7417408847808837
+Train Epoch: 51 [128000/700160 (18%)] Train loss: 0.7461091196537017
+Train Epoch: 51 [192000/700160 (27%)] Train loss: 0.7436938363313675
+Train Epoch: 51 [256000/700160 (37%)] Train loss: 0.7435110682249069
+Train Epoch: 51 [320000/700160 (46%)] Train loss: 0.7444050985574723
+Train Epoch: 51 [384000/700160 (55%)] Train loss: 0.7466583114862442
+Train Epoch: 51 [448000/700160 (64%)] Train loss: 0.7428057187795639
+Train Epoch: 51 [512000/700160 (73%)] Train loss: 0.7459092462062835
+Train Epoch: 51 [576000/700160 (82%)] Train loss: 0.7398800152540207
+Train Epoch: 51 [640000/700160 (91%)] Train loss: 0.7441301643848419
+Test Epoch 51: Accuracy = 63.49% (95228/150000); Invalids = 0.00% (4/150000); Test loss = 0.7492706438328357
+exist -- acc: 71.79% (43714/60888); invalid: 0.00% (1/60888)
+shape -- acc: 66.31% (8548/12891); invalid: 0.02% (2/12891)
+number -- acc: 53.67% (19096/35579); invalid: 0.00% (0/35579)
+size -- acc: 66.43% (8683/13071); invalid: 0.00% (0/13071)
+material -- acc: 64.92% (9090/14001); invalid: 0.00% (0/14001)
+color -- acc: 44.93% (6097/13570); invalid: 0.01% (1/13570)
+Better accuracy found at epoch: 51
+Saving model
+Current learning rate: 4e-05
+Train Epoch: 52 [0/700160 (0%)] Train loss: 0.7335234880447388
+Train Epoch: 52 [64000/700160 (9%)] Train loss: 0.7379345470666885
+Train Epoch: 52 [128000/700160 (18%)] Train loss: 0.7350406563282013
+Train Epoch: 52 [192000/700160 (27%)] Train loss: 0.7364985316991806
+Train Epoch: 52 [256000/700160 (37%)] Train loss: 0.7385635554790497
+Train Epoch: 52 [320000/700160 (46%)] Train loss: 0.7387144201993943
+Train Epoch: 52 [384000/700160 (55%)] Train loss: 0.7409860736131668
+Train Epoch: 52 [448000/700160 (64%)] Train loss: 0.7359738093614578
+Train Epoch: 52 [512000/700160 (73%)] Train loss: 0.7402722805738449
+Train Epoch: 52 [576000/700160 (82%)] Train loss: 0.7358220893144608
+Train Epoch: 52 [640000/700160 (91%)] Train loss: 0.7335163831710816
+Current learning rate: 4e-05
+Train Epoch: 53 [0/700160 (0%)] Train loss: 0.6696931719779968
+Train Epoch: 53 [64000/700160 (9%)] Train loss: 0.7277655464410782
+Train Epoch: 53 [128000/700160 (18%)] Train loss: 0.7346049416065216
+Train Epoch: 53 [192000/700160 (27%)] Train loss: 0.7285544323921204
+Train Epoch: 53 [256000/700160 (37%)] Train loss: 0.7295770287513733
+Train Epoch: 53 [320000/700160 (46%)] Train loss: 0.731431068778038
+Train Epoch: 53 [384000/700160 (55%)] Train loss: 0.7325099140405655
+Train Epoch: 53 [448000/700160 (64%)] Train loss: 0.733255420923233
+Train Epoch: 53 [512000/700160 (73%)] Train loss: 0.7351026576757431
+Train Epoch: 53 [576000/700160 (82%)] Train loss: 0.7294112849235534
+Train Epoch: 53 [640000/700160 (91%)] Train loss: 0.7294466298818588
+Current learning rate: 4e-05
+Train Epoch: 54 [0/700160 (0%)] Train loss: 0.7365882992744446
+Train Epoch: 54 [64000/700160 (9%)] Train loss: 0.7221751284599304
+Train Epoch: 54 [128000/700160 (18%)] Train loss: 0.7274355620145798
+Train Epoch: 54 [192000/700160 (27%)] Train loss: 0.7268600100278855
+Train Epoch: 54 [256000/700160 (37%)] Train loss: 0.7237659186124802
+Train Epoch: 54 [320000/700160 (46%)] Train loss: 0.7253944790363311
+Train Epoch: 54 [384000/700160 (55%)] Train loss: 0.7244846761226654
+Train Epoch: 54 [448000/700160 (64%)] Train loss: 0.7203833335638046
+Train Epoch: 54 [512000/700160 (73%)] Train loss: 0.7225485652685165
+Train Epoch: 54 [576000/700160 (82%)] Train loss: 0.7250659745931626
+Train Epoch: 54 [640000/700160 (91%)] Train loss: 0.729841525554657
+Current learning rate: 4e-05
+Train Epoch: 55 [0/700160 (0%)] Train loss: 0.721470832824707
+Train Epoch: 55 [64000/700160 (9%)] Train loss: 0.7159665524959564
+Train Epoch: 55 [128000/700160 (18%)] Train loss: 0.7225642442703247
+Train Epoch: 55 [192000/700160 (27%)] Train loss: 0.7218029499053955
+Train Epoch: 55 [256000/700160 (37%)] Train loss: 0.719802325963974
+Train Epoch: 55 [320000/700160 (46%)] Train loss: 0.7198717713356018
+Train Epoch: 55 [384000/700160 (55%)] Train loss: 0.7173522311449051
+Train Epoch: 55 [448000/700160 (64%)] Train loss: 0.7232091146707534
+Train Epoch: 55 [512000/700160 (73%)] Train loss: 0.7225370919704437
+Train Epoch: 55 [576000/700160 (82%)] Train loss: 0.7182803624868392
+Train Epoch: 55 [640000/700160 (91%)] Train loss: 0.7149211347103119
+Current learning rate: 4e-05
+Train Epoch: 56 [0/700160 (0%)] Train loss: 0.7041692137718201
+Train Epoch: 56 [64000/700160 (9%)] Train loss: 0.7135349714756012
+Train Epoch: 56 [128000/700160 (18%)] Train loss: 0.7171644854545594
+Train Epoch: 56 [192000/700160 (27%)] Train loss: 0.7112020254135132
+Train Epoch: 56 [256000/700160 (37%)] Train loss: 0.7130943661928177
+Train Epoch: 56 [320000/700160 (46%)] Train loss: 0.7173828506469726
+Train Epoch: 56 [384000/700160 (55%)] Train loss: 0.7110034447908401
+Train Epoch: 56 [448000/700160 (64%)] Train loss: 0.7128997302055359
+Train Epoch: 56 [512000/700160 (73%)] Train loss: 0.7127569937705993
+Train Epoch: 56 [576000/700160 (82%)] Train loss: 0.7129353839159012
+Train Epoch: 56 [640000/700160 (91%)] Train loss: 0.710631987452507
+Current learning rate: 4e-05
+Train Epoch: 57 [0/700160 (0%)] Train loss: 0.716476559638977
+Train Epoch: 57 [64000/700160 (9%)] Train loss: 0.7127231240272522
+Train Epoch: 57 [128000/700160 (18%)] Train loss: 0.710907478928566
+Train Epoch: 57 [192000/700160 (27%)] Train loss: 0.7083571153879166
+Train Epoch: 57 [256000/700160 (37%)] Train loss: 0.7039624601602554
+Train Epoch: 57 [320000/700160 (46%)] Train loss: 0.7056260573863983
+Train Epoch: 57 [384000/700160 (55%)] Train loss: 0.7049871909618378
+Train Epoch: 57 [448000/700160 (64%)] Train loss: 0.706736643910408
+Train Epoch: 57 [512000/700160 (73%)] Train loss: 0.7070753455162049
+Train Epoch: 57 [576000/700160 (82%)] Train loss: 0.7029244649410248
+Train Epoch: 57 [640000/700160 (91%)] Train loss: 0.7035540175437928
+Current learning rate: 4e-05
+Train Epoch: 58 [0/700160 (0%)] Train loss: 0.7086198925971985
+Train Epoch: 58 [64000/700160 (9%)] Train loss: 0.6980586808919906
+Train Epoch: 58 [128000/700160 (18%)] Train loss: 0.6991658961772919
+Train Epoch: 58 [192000/700160 (27%)] Train loss: 0.699468405842781
+Train Epoch: 58 [256000/700160 (37%)] Train loss: 0.6967586660385132
+Train Epoch: 58 [320000/700160 (46%)] Train loss: 0.6999587261676788
+Train Epoch: 58 [384000/700160 (55%)] Train loss: 0.7043680000305176
+Train Epoch: 58 [448000/700160 (64%)] Train loss: 0.7004649889469147
+Train Epoch: 58 [512000/700160 (73%)] Train loss: 0.7005772125720978
+Train Epoch: 58 [576000/700160 (82%)] Train loss: 0.6988137745857239
+Train Epoch: 58 [640000/700160 (91%)] Train loss: 0.7002517318725586
+Current learning rate: 4e-05
+Train Epoch: 59 [0/700160 (0%)] Train loss: 0.6650705933570862
+Train Epoch: 59 [64000/700160 (9%)] Train loss: 0.6913941133022309
+Train Epoch: 59 [128000/700160 (18%)] Train loss: 0.6963387298583984
+Train Epoch: 59 [192000/700160 (27%)] Train loss: 0.69479771733284
+Train Epoch: 59 [256000/700160 (37%)] Train loss: 0.6925325667858124
+Train Epoch: 59 [320000/700160 (46%)] Train loss: 0.6955633634328842
+Train Epoch: 59 [384000/700160 (55%)] Train loss: 0.6944903540611267
+Train Epoch: 59 [448000/700160 (64%)] Train loss: 0.6964134347438812
+Train Epoch: 59 [512000/700160 (73%)] Train loss: 0.6905804044008255
+Train Epoch: 59 [576000/700160 (82%)] Train loss: 0.6909251135587692
+Train Epoch: 59 [640000/700160 (91%)] Train loss: 0.6963721126317978
+Dataset reinitialized with batch size 640
+Current learning rate: 8e-05
+Train Epoch: 60 [0/700160 (0%)] Train loss: 0.6677750945091248
+Train Epoch: 60 [64000/700160 (9%)] Train loss: 0.6988147979974747
+Train Epoch: 60 [128000/700160 (18%)] Train loss: 0.7064690482616425
+Train Epoch: 60 [192000/700160 (27%)] Train loss: 0.701936064362526
+Train Epoch: 60 [256000/700160 (37%)] Train loss: 0.6996088659763336
+Train Epoch: 60 [320000/700160 (46%)] Train loss: 0.7040080046653747
+Train Epoch: 60 [384000/700160 (55%)] Train loss: 0.7037212634086609
+Train Epoch: 60 [448000/700160 (64%)] Train loss: 0.7008061492443085
+Train Epoch: 60 [512000/700160 (73%)] Train loss: 0.6989068901538849
+Train Epoch: 60 [576000/700160 (82%)] Train loss: 0.6967958390712738
+Train Epoch: 60 [640000/700160 (91%)] Train loss: 0.7002040624618531
+Current learning rate: 8e-05
+Train Epoch: 61 [0/700160 (0%)] Train loss: 0.6853494048118591
+Train Epoch: 61 [64000/700160 (9%)] Train loss: 0.6883404028415679
+Train Epoch: 61 [128000/700160 (18%)] Train loss: 0.6918742054700852
+Train Epoch: 61 [192000/700160 (27%)] Train loss: 0.6940942281484603
+Train Epoch: 61 [256000/700160 (37%)] Train loss: 0.6901879876852035
+Train Epoch: 61 [320000/700160 (46%)] Train loss: 0.6850613242387772
+Train Epoch: 61 [384000/700160 (55%)] Train loss: 0.6905717331171036
+Train Epoch: 61 [448000/700160 (64%)] Train loss: 0.6850200933218002
+Train Epoch: 61 [512000/700160 (73%)] Train loss: 0.686898108124733
+Train Epoch: 61 [576000/700160 (82%)] Train loss: 0.68378932595253
+Train Epoch: 61 [640000/700160 (91%)] Train loss: 0.6855635356903076
+Test Epoch 61: Accuracy = 66.34% (99514/150000); Invalids = 0.00% (0/150000); Test loss = 0.690807289011935
+exist -- acc: 72.49% (44139/60888); invalid: 0.00% (0/60888)
+shape -- acc: 69.83% (9002/12891); invalid: 0.00% (0/12891)
+number -- acc: 56.17% (19983/35579); invalid: 0.00% (0/35579)
+size -- acc: 69.43% (9075/13071); invalid: 0.00% (0/13071)
+material -- acc: 70.75% (9906/14001); invalid: 0.00% (0/14001)
+color -- acc: 54.60% (7409/13570); invalid: 0.00% (0/13570)
+Better accuracy found at epoch: 61
+Saving model
+Current learning rate: 8e-05
+Train Epoch: 62 [0/700160 (0%)] Train loss: 0.6645301580429077
+Train Epoch: 62 [64000/700160 (9%)] Train loss: 0.6771090048551559
+Train Epoch: 62 [128000/700160 (18%)] Train loss: 0.6759732466936111
+Train Epoch: 62 [192000/700160 (27%)] Train loss: 0.673415161371231
+Train Epoch: 62 [256000/700160 (37%)] Train loss: 0.6732659697532654
+Train Epoch: 62 [320000/700160 (46%)] Train loss: 0.6693030494451523
+Train Epoch: 62 [384000/700160 (55%)] Train loss: 0.6752474397420883
+Train Epoch: 62 [448000/700160 (64%)] Train loss: 0.6677585297822952
+Train Epoch: 62 [512000/700160 (73%)] Train loss: 0.6736981916427612
+Train Epoch: 62 [576000/700160 (82%)] Train loss: 0.6705686622858047
+Train Epoch: 62 [640000/700160 (91%)] Train loss: 0.6654055941104889
+Current learning rate: 8e-05
+Train Epoch: 63 [0/700160 (0%)] Train loss: 0.6390530467033386
+Train Epoch: 63 [64000/700160 (9%)] Train loss: 0.6539657682180404
+Train Epoch: 63 [128000/700160 (18%)] Train loss: 0.6637666410207749
+Train Epoch: 63 [192000/700160 (27%)] Train loss: 0.6580674076080322
+Train Epoch: 63 [256000/700160 (37%)] Train loss: 0.6601377177238464
+Train Epoch: 63 [320000/700160 (46%)] Train loss: 0.6562979346513749
+Train Epoch: 63 [384000/700160 (55%)] Train loss: 0.6580477643013001
+Train Epoch: 63 [448000/700160 (64%)] Train loss: 0.6517886114120484
+Train Epoch: 63 [512000/700160 (73%)] Train loss: 0.6558238255977631
+Train Epoch: 63 [576000/700160 (82%)] Train loss: 0.646879854798317
+Train Epoch: 63 [640000/700160 (91%)] Train loss: 0.6513935071229935
+Current learning rate: 8e-05
+Train Epoch: 64 [0/700160 (0%)] Train loss: 0.6598992347717285
+Train Epoch: 64 [64000/700160 (9%)] Train loss: 0.6508386749029159
+Train Epoch: 64 [128000/700160 (18%)] Train loss: 0.6403719103336334
+Train Epoch: 64 [192000/700160 (27%)] Train loss: 0.6418519711494446
+Train Epoch: 64 [256000/700160 (37%)] Train loss: 0.6431103134155274
+Train Epoch: 64 [320000/700160 (46%)] Train loss: 0.6374776262044907
+Train Epoch: 64 [384000/700160 (55%)] Train loss: 0.6360637599229813
+Train Epoch: 64 [448000/700160 (64%)] Train loss: 0.6355214822292328
+Train Epoch: 64 [512000/700160 (73%)] Train loss: 0.6344273543357849
+Train Epoch: 64 [576000/700160 (82%)] Train loss: 0.6330113154649735
+Train Epoch: 64 [640000/700160 (91%)] Train loss: 0.6334889334440231
+Current learning rate: 8e-05
+Train Epoch: 65 [0/700160 (0%)] Train loss: 0.6036368012428284
+Train Epoch: 65 [64000/700160 (9%)] Train loss: 0.624308477640152
+Train Epoch: 65 [128000/700160 (18%)] Train loss: 0.6251773232221604
+Train Epoch: 65 [192000/700160 (27%)] Train loss: 0.6158059930801392
+Train Epoch: 65 [256000/700160 (37%)] Train loss: 0.6212811613082886
+Train Epoch: 65 [320000/700160 (46%)] Train loss: 0.6210986310243607
+Train Epoch: 65 [384000/700160 (55%)] Train loss: 0.618801349401474
+Train Epoch: 65 [448000/700160 (64%)] Train loss: 0.6152928006649018
+Train Epoch: 65 [512000/700160 (73%)] Train loss: 0.6141237848997116
+Train Epoch: 65 [576000/700160 (82%)] Train loss: 0.614245970249176
+Train Epoch: 65 [640000/700160 (91%)] Train loss: 0.6117569214105606
+Current learning rate: 8e-05
+Train Epoch: 66 [0/700160 (0%)] Train loss: 0.5957129001617432
+Train Epoch: 66 [64000/700160 (9%)] Train loss: 0.5997189491987228
+Train Epoch: 66 [128000/700160 (18%)] Train loss: 0.6022281384468079
+Train Epoch: 66 [192000/700160 (27%)] Train loss: 0.6029261571168899
+Train Epoch: 66 [256000/700160 (37%)] Train loss: 0.5996625876426697
+Train Epoch: 66 [320000/700160 (46%)] Train loss: 0.5964579451084137
+Train Epoch: 66 [384000/700160 (55%)] Train loss: 0.5974962872266769
+Train Epoch: 66 [448000/700160 (64%)] Train loss: 0.5911434292793274
+Train Epoch: 66 [512000/700160 (73%)] Train loss: 0.5904262036085128
+Train Epoch: 66 [576000/700160 (82%)] Train loss: 0.5905688309669495
+Train Epoch: 66 [640000/700160 (91%)] Train loss: 0.5892607897520066
+Current learning rate: 8e-05
+Train Epoch: 67 [0/700160 (0%)] Train loss: 0.5626920461654663
+Train Epoch: 67 [64000/700160 (9%)] Train loss: 0.5799176606535912
+Train Epoch: 67 [128000/700160 (18%)] Train loss: 0.573480858206749
+Train Epoch: 67 [192000/700160 (27%)] Train loss: 0.5733373403549195
+Train Epoch: 67 [256000/700160 (37%)] Train loss: 0.5801884317398072
+Train Epoch: 67 [320000/700160 (46%)] Train loss: 0.5721080297231674
+Train Epoch: 67 [384000/700160 (55%)] Train loss: 0.5738631480932236
+Train Epoch: 67 [448000/700160 (64%)] Train loss: 0.5697240334749222
+Train Epoch: 67 [512000/700160 (73%)] Train loss: 0.5653786379098892
+Train Epoch: 67 [576000/700160 (82%)] Train loss: 0.5702048587799072
+Train Epoch: 67 [640000/700160 (91%)] Train loss: 0.5687662720680237
+Current learning rate: 8e-05
+Train Epoch: 68 [0/700160 (0%)] Train loss: 0.5418471693992615
+Train Epoch: 68 [64000/700160 (9%)] Train loss: 0.5529225167632102
+Train Epoch: 68 [128000/700160 (18%)] Train loss: 0.5573446321487426
+Train Epoch: 68 [192000/700160 (27%)] Train loss: 0.5562671685218811
+Train Epoch: 68 [256000/700160 (37%)] Train loss: 0.552520385980606
+Train Epoch: 68 [320000/700160 (46%)] Train loss: 0.5563517454266548
+Train Epoch: 68 [384000/700160 (55%)] Train loss: 0.5536113345623016
+Train Epoch: 68 [448000/700160 (64%)] Train loss: 0.5501171460747719
+Train Epoch: 68 [512000/700160 (73%)] Train loss: 0.5438790047168731
+Train Epoch: 68 [576000/700160 (82%)] Train loss: 0.5452946427464486
+Train Epoch: 68 [640000/700160 (91%)] Train loss: 0.5422054696083068
+Current learning rate: 8e-05
+Train Epoch: 69 [0/700160 (0%)] Train loss: 0.5167554020881653
+Train Epoch: 69 [64000/700160 (9%)] Train loss: 0.5322128358483315
+Train Epoch: 69 [128000/700160 (18%)] Train loss: 0.5324882370233536
+Train Epoch: 69 [192000/700160 (27%)] Train loss: 0.5367409306764602
+Train Epoch: 69 [256000/700160 (37%)] Train loss: 0.5292032104730606
+Train Epoch: 69 [320000/700160 (46%)] Train loss: 0.528201234638691
+Train Epoch: 69 [384000/700160 (55%)] Train loss: 0.5254976889491081
+Train Epoch: 69 [448000/700160 (64%)] Train loss: 0.525889827311039
+Train Epoch: 69 [512000/700160 (73%)] Train loss: 0.5239251339435578
+Train Epoch: 69 [576000/700160 (82%)] Train loss: 0.519601608812809
+Train Epoch: 69 [640000/700160 (91%)] Train loss: 0.519956565797329
+Current learning rate: 8e-05
+Train Epoch: 70 [0/700160 (0%)] Train loss: 0.5537992715835571
+Train Epoch: 70 [64000/700160 (9%)] Train loss: 0.5129346868395805
+Train Epoch: 70 [128000/700160 (18%)] Train loss: 0.5108809417486191
+Train Epoch: 70 [192000/700160 (27%)] Train loss: 0.5062281787395477
+Train Epoch: 70 [256000/700160 (37%)] Train loss: 0.5062994149327278
+Train Epoch: 70 [320000/700160 (46%)] Train loss: 0.5073866069316864
+Train Epoch: 70 [384000/700160 (55%)] Train loss: 0.5063163667917252
+Train Epoch: 70 [448000/700160 (64%)] Train loss: 0.5044834107160568
+Train Epoch: 70 [512000/700160 (73%)] Train loss: 0.5036096701025963
+Train Epoch: 70 [576000/700160 (82%)] Train loss: 0.5042452743649483
+Train Epoch: 70 [640000/700160 (91%)] Train loss: 0.49808694928884506
+Current learning rate: 8e-05
+Train Epoch: 71 [0/700160 (0%)] Train loss: 0.4666748046875
+Train Epoch: 71 [64000/700160 (9%)] Train loss: 0.4955032542347908
+Train Epoch: 71 [128000/700160 (18%)] Train loss: 0.48745292007923124
+Train Epoch: 71 [192000/700160 (27%)] Train loss: 0.48670038431882856
+Train Epoch: 71 [256000/700160 (37%)] Train loss: 0.48621222645044326
+Train Epoch: 71 [320000/700160 (46%)] Train loss: 0.485798217356205
+Train Epoch: 71 [384000/700160 (55%)] Train loss: 0.49122755020856856
+Train Epoch: 71 [448000/700160 (64%)] Train loss: 0.48843773365020754
+Train Epoch: 71 [512000/700160 (73%)] Train loss: 0.4869525110721588
+Train Epoch: 71 [576000/700160 (82%)] Train loss: 0.48776065319776535
+Train Epoch: 71 [640000/700160 (91%)] Train loss: 0.4815493363142014
+Test Epoch 71: Accuracy = 76.56% (114834/150000); Invalids = 0.02% (27/150000); Test loss = 0.49859868237312804
+exist -- acc: 75.63% (46049/60888); invalid: 0.00% (0/60888)
+shape -- acc: 87.39% (11265/12891); invalid: 0.01% (1/12891)
+number -- acc: 63.98% (22764/35579); invalid: 0.01% (3/35579)
+size -- acc: 87.36% (11419/13071); invalid: 0.18% (23/13071)
+material -- acc: 88.91% (12448/14001); invalid: 0.00% (0/14001)
+color -- acc: 80.24% (10889/13570); invalid: 0.00% (0/13570)
+Better accuracy found at epoch: 71
+Saving model
+Current learning rate: 8e-05
+Train Epoch: 72 [0/700160 (0%)] Train loss: 0.4866439700126648
+Train Epoch: 72 [64000/700160 (9%)] Train loss: 0.47427319169044496
+Train Epoch: 72 [128000/700160 (18%)] Train loss: 0.47688578575849533
+Train Epoch: 72 [192000/700160 (27%)] Train loss: 0.473059401512146
+Train Epoch: 72 [256000/700160 (37%)] Train loss: 0.4774072477221489
+Train Epoch: 72 [320000/700160 (46%)] Train loss: 0.47390473783016207
+Train Epoch: 72 [384000/700160 (55%)] Train loss: 0.473047354221344
+Train Epoch: 72 [448000/700160 (64%)] Train loss: 0.47129394799470903
+Train Epoch: 72 [512000/700160 (73%)] Train loss: 0.4726047709584236
+Train Epoch: 72 [576000/700160 (82%)] Train loss: 0.4729613384604454
+Train Epoch: 72 [640000/700160 (91%)] Train loss: 0.4711809477210045
+Current learning rate: 8e-05
+Train Epoch: 73 [0/700160 (0%)] Train loss: 0.46852952241897583
+Train Epoch: 73 [64000/700160 (9%)] Train loss: 0.4616924375295639
+Train Epoch: 73 [128000/700160 (18%)] Train loss: 0.45944009721279144
+Train Epoch: 73 [192000/700160 (27%)] Train loss: 0.4618652927875519
+Train Epoch: 73 [256000/700160 (37%)] Train loss: 0.46254561364650726
+Train Epoch: 73 [320000/700160 (46%)] Train loss: 0.46190101623535157
+Train Epoch: 73 [384000/700160 (55%)] Train loss: 0.4568898990750313
+Train Epoch: 73 [448000/700160 (64%)] Train loss: 0.46054435044527053
+Train Epoch: 73 [512000/700160 (73%)] Train loss: 0.4585294020175934
+Train Epoch: 73 [576000/700160 (82%)] Train loss: 0.4560417172312736
+Train Epoch: 73 [640000/700160 (91%)] Train loss: 0.46117132872343064
+Current learning rate: 8e-05
+Train Epoch: 74 [0/700160 (0%)] Train loss: 0.41749924421310425
+Train Epoch: 74 [64000/700160 (9%)] Train loss: 0.44549169719219206
+Train Epoch: 74 [128000/700160 (18%)] Train loss: 0.44913059920072557
+Train Epoch: 74 [192000/700160 (27%)] Train loss: 0.4504562869668007
+Train Epoch: 74 [256000/700160 (37%)] Train loss: 0.44182059705257415
+Train Epoch: 74 [320000/700160 (46%)] Train loss: 0.44718415290117264
+Train Epoch: 74 [384000/700160 (55%)] Train loss: 0.4512117901444435
+Train Epoch: 74 [448000/700160 (64%)] Train loss: 0.4507308375835419
+Train Epoch: 74 [512000/700160 (73%)] Train loss: 0.44657755494117735
+Train Epoch: 74 [576000/700160 (82%)] Train loss: 0.44836534589529037
+Train Epoch: 74 [640000/700160 (91%)] Train loss: 0.44506758600473406
+Current learning rate: 8e-05
+Train Epoch: 75 [0/700160 (0%)] Train loss: 0.38517776131629944
+Train Epoch: 75 [64000/700160 (9%)] Train loss: 0.4369740781188011
+Train Epoch: 75 [128000/700160 (18%)] Train loss: 0.44106930017471313
+Train Epoch: 75 [192000/700160 (27%)] Train loss: 0.4357651978731155
+Train Epoch: 75 [256000/700160 (37%)] Train loss: 0.44560342222452165
+Train Epoch: 75 [320000/700160 (46%)] Train loss: 0.43686979711055757
+Train Epoch: 75 [384000/700160 (55%)] Train loss: 0.4407021987438202
+Train Epoch: 75 [448000/700160 (64%)] Train loss: 0.4388144311308861
+Train Epoch: 75 [512000/700160 (73%)] Train loss: 0.43411300241947176
+Train Epoch: 75 [576000/700160 (82%)] Train loss: 0.44066884547472
+Train Epoch: 75 [640000/700160 (91%)] Train loss: 0.4374074277281761
+Current learning rate: 8e-05
+Train Epoch: 76 [0/700160 (0%)] Train loss: 0.42427125573158264
+Train Epoch: 76 [64000/700160 (9%)] Train loss: 0.429987031519413
+Train Epoch: 76 [128000/700160 (18%)] Train loss: 0.42663802683353425
+Train Epoch: 76 [192000/700160 (27%)] Train loss: 0.4224211871623993
+Train Epoch: 76 [256000/700160 (37%)] Train loss: 0.431127071082592
+Train Epoch: 76 [320000/700160 (46%)] Train loss: 0.42889845103025437
+Train Epoch: 76 [384000/700160 (55%)] Train loss: 0.42953994274139407
+Train Epoch: 76 [448000/700160 (64%)] Train loss: 0.42904012620449067
+Train Epoch: 76 [512000/700160 (73%)] Train loss: 0.4302291774749756
+Train Epoch: 76 [576000/700160 (82%)] Train loss: 0.4273957970738411
+Train Epoch: 76 [640000/700160 (91%)] Train loss: 0.42712635844945906
+Current learning rate: 8e-05
+Train Epoch: 77 [0/700160 (0%)] Train loss: 0.4050517678260803
+Train Epoch: 77 [64000/700160 (9%)] Train loss: 0.41814824312925336
+Train Epoch: 77 [128000/700160 (18%)] Train loss: 0.4211879882216454
+Train Epoch: 77 [192000/700160 (27%)] Train loss: 0.4187855526804924
+Train Epoch: 77 [256000/700160 (37%)] Train loss: 0.4244625300168991
+Train Epoch: 77 [320000/700160 (46%)] Train loss: 0.41883175224065783
+Train Epoch: 77 [384000/700160 (55%)] Train loss: 0.4198979964852333
+Train Epoch: 77 [448000/700160 (64%)] Train loss: 0.42100239485502244
+Train Epoch: 77 [512000/700160 (73%)] Train loss: 0.4195775777101517
+Train Epoch: 77 [576000/700160 (82%)] Train loss: 0.42015581130981444
+Train Epoch: 77 [640000/700160 (91%)] Train loss: 0.41697105795145034
+Current learning rate: 8e-05
+Train Epoch: 78 [0/700160 (0%)] Train loss: 0.38506880402565
+Train Epoch: 78 [64000/700160 (9%)] Train loss: 0.41185054630041124
+Train Epoch: 78 [128000/700160 (18%)] Train loss: 0.41078653633594514
+Train Epoch: 78 [192000/700160 (27%)] Train loss: 0.41272597074508666
+Train Epoch: 78 [256000/700160 (37%)] Train loss: 0.41393890738487243
+Train Epoch: 78 [320000/700160 (46%)] Train loss: 0.412339985370636
+Train Epoch: 78 [384000/700160 (55%)] Train loss: 0.4120752444863319
+Train Epoch: 78 [448000/700160 (64%)] Train loss: 0.414048590362072
+Train Epoch: 78 [512000/700160 (73%)] Train loss: 0.41348741739988326
+Train Epoch: 78 [576000/700160 (82%)] Train loss: 0.4124329999089241
+Train Epoch: 78 [640000/700160 (91%)] Train loss: 0.4115306371450424
+Current learning rate: 8e-05
+Train Epoch: 79 [0/700160 (0%)] Train loss: 0.3807000517845154
+Train Epoch: 79 [64000/700160 (9%)] Train loss: 0.39979694336652755
+Train Epoch: 79 [128000/700160 (18%)] Train loss: 0.40265994548797607
+Train Epoch: 79 [192000/700160 (27%)] Train loss: 0.40077615678310397
+Train Epoch: 79 [256000/700160 (37%)] Train loss: 0.40541809260845185
+Train Epoch: 79 [320000/700160 (46%)] Train loss: 0.4057233622670174
+Train Epoch: 79 [384000/700160 (55%)] Train loss: 0.40723518013954163
+Train Epoch: 79 [448000/700160 (64%)] Train loss: 0.4020441073179245
+Train Epoch: 79 [512000/700160 (73%)] Train loss: 0.4086318790912628
+Train Epoch: 79 [576000/700160 (82%)] Train loss: 0.40575016766786576
+Train Epoch: 79 [640000/700160 (91%)] Train loss: 0.4001008367538452
+Dataset reinitialized with batch size 640
+Current learning rate: 0.00016
+Train Epoch: 80 [0/700160 (0%)] Train loss: 0.3823208212852478
+Train Epoch: 80 [64000/700160 (9%)] Train loss: 0.4262439739704132
+Train Epoch: 80 [128000/700160 (18%)] Train loss: 0.42750397861003875
+Train Epoch: 80 [192000/700160 (27%)] Train loss: 0.4235410782694817
+Train Epoch: 80 [256000/700160 (37%)] Train loss: 0.42485024154186246
+Train Epoch: 80 [320000/700160 (46%)] Train loss: 0.42011556804180145
+Train Epoch: 80 [384000/700160 (55%)] Train loss: 0.42733625501394273
+Train Epoch: 80 [448000/700160 (64%)] Train loss: 0.4270817548036575
+Train Epoch: 80 [512000/700160 (73%)] Train loss: 0.4295187854766846
+Train Epoch: 80 [576000/700160 (82%)] Train loss: 0.421373233795166
+Train Epoch: 80 [640000/700160 (91%)] Train loss: 0.42111012428998945
+Current learning rate: 0.00016
+Train Epoch: 81 [0/700160 (0%)] Train loss: 0.4156152307987213
+Train Epoch: 81 [64000/700160 (9%)] Train loss: 0.41059766739606857
+Train Epoch: 81 [128000/700160 (18%)] Train loss: 0.4157120576500893
+Train Epoch: 81 [192000/700160 (27%)] Train loss: 0.4120774480700493
+Train Epoch: 81 [256000/700160 (37%)] Train loss: 0.41126076310873033
+Train Epoch: 81 [320000/700160 (46%)] Train loss: 0.4117695826292038
+Train Epoch: 81 [384000/700160 (55%)] Train loss: 0.41425267547369005
+Train Epoch: 81 [448000/700160 (64%)] Train loss: 0.41050419956445694
+Train Epoch: 81 [512000/700160 (73%)] Train loss: 0.41147938162088393
+Train Epoch: 81 [576000/700160 (82%)] Train loss: 0.4101388281583786
+Train Epoch: 81 [640000/700160 (91%)] Train loss: 0.4094891291856766
+Test Epoch 81: Accuracy = 79.88% (119813/150000); Invalids = 0.01% (8/150000); Test loss = 0.4306124192603091
+exist -- acc: 77.62% (47261/60888); invalid: 0.00% (1/60888)
+shape -- acc: 91.52% (11798/12891); invalid: 0.00% (0/12891)
+number -- acc: 67.68% (24079/35579); invalid: 0.01% (5/35579)
+size -- acc: 92.36% (12073/13071); invalid: 0.01% (1/13071)
+material -- acc: 92.28% (12920/14001); invalid: 0.00% (0/14001)
+color -- acc: 86.09% (11682/13570); invalid: 0.01% (1/13570)
+Better accuracy found at epoch: 81
+Saving model
+Current learning rate: 0.00016
+Train Epoch: 82 [0/700160 (0%)] Train loss: 0.34599781036376953
+Train Epoch: 82 [64000/700160 (9%)] Train loss: 0.4027079004049301
+Train Epoch: 82 [128000/700160 (18%)] Train loss: 0.3985187992453575
+Train Epoch: 82 [192000/700160 (27%)] Train loss: 0.39659903198480606
+Train Epoch: 82 [256000/700160 (37%)] Train loss: 0.4043737515807152
+Train Epoch: 82 [320000/700160 (46%)] Train loss: 0.401097030043602
+Train Epoch: 82 [384000/700160 (55%)] Train loss: 0.4000389128923416
+Train Epoch: 82 [448000/700160 (64%)] Train loss: 0.3982394576072693
+Train Epoch: 82 [512000/700160 (73%)] Train loss: 0.3954984274506569
+Train Epoch: 82 [576000/700160 (82%)] Train loss: 0.3962772500514984
+Train Epoch: 82 [640000/700160 (91%)] Train loss: 0.39657662838697433
+Current learning rate: 0.00016
+Train Epoch: 83 [0/700160 (0%)] Train loss: 0.3928678035736084
+Train Epoch: 83 [64000/700160 (9%)] Train loss: 0.38653320372104644
+Train Epoch: 83 [128000/700160 (18%)] Train loss: 0.3859946531057358
+Train Epoch: 83 [192000/700160 (27%)] Train loss: 0.3895727628469467
+Train Epoch: 83 [256000/700160 (37%)] Train loss: 0.38676621615886686
+Train Epoch: 83 [320000/700160 (46%)] Train loss: 0.38944587409496306
+Train Epoch: 83 [384000/700160 (55%)] Train loss: 0.386414715051651
+Train Epoch: 83 [448000/700160 (64%)] Train loss: 0.3839966303110123
+Train Epoch: 83 [512000/700160 (73%)] Train loss: 0.38455694675445556
+Train Epoch: 83 [576000/700160 (82%)] Train loss: 0.3862692964076996
+Train Epoch: 83 [640000/700160 (91%)] Train loss: 0.3846845707297325
+Current learning rate: 0.00016
+Train Epoch: 84 [0/700160 (0%)] Train loss: 0.36965876817703247
+Train Epoch: 84 [64000/700160 (9%)] Train loss: 0.4004856535792351
+Train Epoch: 84 [128000/700160 (18%)] Train loss: 0.3760785686969757
+Train Epoch: 84 [192000/700160 (27%)] Train loss: 0.37121126890182493
+Train Epoch: 84 [256000/700160 (37%)] Train loss: 0.36939507514238357
+Train Epoch: 84 [320000/700160 (46%)] Train loss: 0.37009509205818175
+Train Epoch: 84 [384000/700160 (55%)] Train loss: 0.36932441145181655
+Train Epoch: 84 [448000/700160 (64%)] Train loss: 0.37186020642518997
+Train Epoch: 84 [512000/700160 (73%)] Train loss: 0.37266131192445756
+Train Epoch: 84 [576000/700160 (82%)] Train loss: 0.3739194804430008
+Train Epoch: 84 [640000/700160 (91%)] Train loss: 0.3682379749417305
+Current learning rate: 0.00016
+Train Epoch: 85 [0/700160 (0%)] Train loss: 0.3652486503124237
+Train Epoch: 85 [64000/700160 (9%)] Train loss: 0.3614822605252266
+Train Epoch: 85 [128000/700160 (18%)] Train loss: 0.362988076210022
+Train Epoch: 85 [192000/700160 (27%)] Train loss: 0.3571334409713745
+Train Epoch: 85 [256000/700160 (37%)] Train loss: 0.3588504481315613
+Train Epoch: 85 [320000/700160 (46%)] Train loss: 0.36728166937828066
+Train Epoch: 85 [384000/700160 (55%)] Train loss: 0.35731238186359404
+Train Epoch: 85 [448000/700160 (64%)] Train loss: 0.3629625788331032
+Train Epoch: 85 [512000/700160 (73%)] Train loss: 0.355602565407753
+Train Epoch: 85 [576000/700160 (82%)] Train loss: 0.3601597419381142
+Train Epoch: 85 [640000/700160 (91%)] Train loss: 0.3573321470618248
+Current learning rate: 0.00016
+Train Epoch: 86 [0/700160 (0%)] Train loss: 0.35063692927360535
+Train Epoch: 86 [64000/700160 (9%)] Train loss: 0.34768888741731646
+Train Epoch: 86 [128000/700160 (18%)] Train loss: 0.34469808638095856
+Train Epoch: 86 [192000/700160 (27%)] Train loss: 0.34641550332307813
+Train Epoch: 86 [256000/700160 (37%)] Train loss: 0.34777523428201673
+Train Epoch: 86 [320000/700160 (46%)] Train loss: 0.34495171666145324
+Train Epoch: 86 [384000/700160 (55%)] Train loss: 0.3506647154688835
+Train Epoch: 86 [448000/700160 (64%)] Train loss: 0.34715871155261996
+Train Epoch: 86 [512000/700160 (73%)] Train loss: 0.3516941025853157
+Train Epoch: 86 [576000/700160 (82%)] Train loss: 0.3489985013008118
+Train Epoch: 86 [640000/700160 (91%)] Train loss: 0.3473768538236618
+Current learning rate: 0.00016
+Train Epoch: 87 [0/700160 (0%)] Train loss: 0.3157010078430176
+Train Epoch: 87 [64000/700160 (9%)] Train loss: 0.33165688574314117
+Train Epoch: 87 [128000/700160 (18%)] Train loss: 0.3341441568732262
+Train Epoch: 87 [192000/700160 (27%)] Train loss: 0.3355614924430847
+Train Epoch: 87 [256000/700160 (37%)] Train loss: 0.3385620975494385
+Train Epoch: 87 [320000/700160 (46%)] Train loss: 0.3418064126372337
+Train Epoch: 87 [384000/700160 (55%)] Train loss: 0.3381464970111847
+Train Epoch: 87 [448000/700160 (64%)] Train loss: 0.3365239158272743
+Train Epoch: 87 [512000/700160 (73%)] Train loss: 0.34767161041498185
+Train Epoch: 87 [576000/700160 (82%)] Train loss: 0.3350035351514816
+Train Epoch: 87 [640000/700160 (91%)] Train loss: 0.3321105805039406
+Current learning rate: 0.00016
+Train Epoch: 88 [0/700160 (0%)] Train loss: 0.2994350790977478
+Train Epoch: 88 [64000/700160 (9%)] Train loss: 0.32125323176383974
+Train Epoch: 88 [128000/700160 (18%)] Train loss: 0.3261430612206459
+Train Epoch: 88 [192000/700160 (27%)] Train loss: 0.3205530318617821
+Train Epoch: 88 [256000/700160 (37%)] Train loss: 0.32389395534992216
+Train Epoch: 88 [320000/700160 (46%)] Train loss: 0.31860692441463473
+Train Epoch: 88 [384000/700160 (55%)] Train loss: 0.3210060265660286
+Train Epoch: 88 [448000/700160 (64%)] Train loss: 0.319481181204319
+Train Epoch: 88 [512000/700160 (73%)] Train loss: 0.32312326490879056
+Train Epoch: 88 [576000/700160 (82%)] Train loss: 0.31972056567668916
+Train Epoch: 88 [640000/700160 (91%)] Train loss: 0.3219274124503136
+Current learning rate: 0.00016
+Train Epoch: 89 [0/700160 (0%)] Train loss: 0.2871864438056946
+Train Epoch: 89 [64000/700160 (9%)] Train loss: 0.304557503759861
+Train Epoch: 89 [128000/700160 (18%)] Train loss: 0.30686189100146294
+Train Epoch: 89 [192000/700160 (27%)] Train loss: 0.30990785151720046
+Train Epoch: 89 [256000/700160 (37%)] Train loss: 0.3112037831544876
+Train Epoch: 89 [320000/700160 (46%)] Train loss: 0.3106596930325031
+Train Epoch: 89 [384000/700160 (55%)] Train loss: 0.30806290805339814
+Train Epoch: 89 [448000/700160 (64%)] Train loss: 0.30725971519947054
+Train Epoch: 89 [512000/700160 (73%)] Train loss: 0.31523493021726606
+Train Epoch: 89 [576000/700160 (82%)] Train loss: 0.3098830509185791
+Train Epoch: 89 [640000/700160 (91%)] Train loss: 0.3063468688726425
+Current learning rate: 0.00016
+Train Epoch: 90 [0/700160 (0%)] Train loss: 0.2837425172328949
+Train Epoch: 90 [64000/700160 (9%)] Train loss: 0.2940473532676697
+Train Epoch: 90 [128000/700160 (18%)] Train loss: 0.2969499686360359
+Train Epoch: 90 [192000/700160 (27%)] Train loss: 0.2944961439073086
+Train Epoch: 90 [256000/700160 (37%)] Train loss: 0.2997371982038021
+Train Epoch: 90 [320000/700160 (46%)] Train loss: 0.29884798675775526
+Train Epoch: 90 [384000/700160 (55%)] Train loss: 0.29340796440839767
+Train Epoch: 90 [448000/700160 (64%)] Train loss: 0.2951429945230484
+Train Epoch: 90 [512000/700160 (73%)] Train loss: 0.2957910491526127
+Train Epoch: 90 [576000/700160 (82%)] Train loss: 0.297018159776926
+Train Epoch: 90 [640000/700160 (91%)] Train loss: 0.29508853048086164
+Current learning rate: 0.00016
+Train Epoch: 91 [0/700160 (0%)] Train loss: 0.2757530212402344
+Train Epoch: 91 [64000/700160 (9%)] Train loss: 0.28272340655326844
+Train Epoch: 91 [128000/700160 (18%)] Train loss: 0.283298681229353
+Train Epoch: 91 [192000/700160 (27%)] Train loss: 0.2793250526487827
+Train Epoch: 91 [256000/700160 (37%)] Train loss: 0.28297918528318405
+Train Epoch: 91 [320000/700160 (46%)] Train loss: 0.28239928036928175
+Train Epoch: 91 [384000/700160 (55%)] Train loss: 0.28668025180697443
+Train Epoch: 91 [448000/700160 (64%)] Train loss: 0.28444412648677825
+Train Epoch: 91 [512000/700160 (73%)] Train loss: 0.2826277296245098
+Train Epoch: 91 [576000/700160 (82%)] Train loss: 0.2880266761779785
+Train Epoch: 91 [640000/700160 (91%)] Train loss: 0.2845399484038353
+Test Epoch 91: Accuracy = 86.02% (129023/150000); Invalids = 0.00% (1/150000); Test loss = 0.3118626648441274
+exist -- acc: 86.01% (52371/60888); invalid: 0.00% (0/60888)
+shape -- acc: 92.92% (11978/12891); invalid: 0.00% (0/12891)
+number -- acc: 77.14% (27445/35579); invalid: 0.00% (0/35579)
+size -- acc: 93.41% (12210/13071); invalid: 0.00% (0/13071)
+material -- acc: 94.09% (13173/14001); invalid: 0.01% (1/14001)
+color -- acc: 87.30% (11846/13570); invalid: 0.00% (0/13570)
+Better accuracy found at epoch: 91
+Saving model
+Current learning rate: 0.00016
+Train Epoch: 92 [0/700160 (0%)] Train loss: 0.29225513339042664
+Train Epoch: 92 [64000/700160 (9%)] Train loss: 0.26367507308721544
+Train Epoch: 92 [128000/700160 (18%)] Train loss: 0.2633925414085388
+Train Epoch: 92 [192000/700160 (27%)] Train loss: 0.26616969630122184
+Train Epoch: 92 [256000/700160 (37%)] Train loss: 0.2726190336048603
+Train Epoch: 92 [320000/700160 (46%)] Train loss: 0.2698314493894577
+Train Epoch: 92 [384000/700160 (55%)] Train loss: 0.2699484494328499
+Train Epoch: 92 [448000/700160 (64%)] Train loss: 0.2667589123547077
+Train Epoch: 92 [512000/700160 (73%)] Train loss: 0.27064072623848917
+Train Epoch: 92 [576000/700160 (82%)] Train loss: 0.2714855068922043
+Train Epoch: 92 [640000/700160 (91%)] Train loss: 0.26471129164099694
+Current learning rate: 0.00016
+Train Epoch: 93 [0/700160 (0%)] Train loss: 0.2313472479581833
+Train Epoch: 93 [64000/700160 (9%)] Train loss: 0.25127953350543974
+Train Epoch: 93 [128000/700160 (18%)] Train loss: 0.2545780797302723
+Train Epoch: 93 [192000/700160 (27%)] Train loss: 0.2556861028075218
+Train Epoch: 93 [256000/700160 (37%)] Train loss: 0.254522088766098
+Train Epoch: 93 [320000/700160 (46%)] Train loss: 0.25378821313381195
+Train Epoch: 93 [384000/700160 (55%)] Train loss: 0.25565560057759285
+Train Epoch: 93 [448000/700160 (64%)] Train loss: 0.2538164998590946
+Train Epoch: 93 [512000/700160 (73%)] Train loss: 0.2528324410319328
+Train Epoch: 93 [576000/700160 (82%)] Train loss: 0.25950280234217643
+Train Epoch: 93 [640000/700160 (91%)] Train loss: 0.2519115540385246
+Current learning rate: 0.00016
+Train Epoch: 94 [0/700160 (0%)] Train loss: 0.233102485537529
+Train Epoch: 94 [64000/700160 (9%)] Train loss: 0.23563188582658767
+Train Epoch: 94 [128000/700160 (18%)] Train loss: 0.23747969463467597
+Train Epoch: 94 [192000/700160 (27%)] Train loss: 0.24548415809869767
+Train Epoch: 94 [256000/700160 (37%)] Train loss: 0.24110946163535119
+Train Epoch: 94 [320000/700160 (46%)] Train loss: 0.24108325213193893
+Train Epoch: 94 [384000/700160 (55%)] Train loss: 0.23996540129184724
+Train Epoch: 94 [448000/700160 (64%)] Train loss: 0.24201438575983047
+Train Epoch: 94 [512000/700160 (73%)] Train loss: 0.2387333981692791
+Train Epoch: 94 [576000/700160 (82%)] Train loss: 0.24088791862130166
+Train Epoch: 94 [640000/700160 (91%)] Train loss: 0.23621583342552185
+Current learning rate: 0.00016
+Train Epoch: 95 [0/700160 (0%)] Train loss: 0.21569983661174774
+Train Epoch: 95 [64000/700160 (9%)] Train loss: 0.22259023517370224
+Train Epoch: 95 [128000/700160 (18%)] Train loss: 0.22753158956766129
+Train Epoch: 95 [192000/700160 (27%)] Train loss: 0.23026640668511392
+Train Epoch: 95 [256000/700160 (37%)] Train loss: 0.22538842424750327
+Train Epoch: 95 [320000/700160 (46%)] Train loss: 0.22840587437152862
+Train Epoch: 95 [384000/700160 (55%)] Train loss: 0.2241044645011425
+Train Epoch: 95 [448000/700160 (64%)] Train loss: 0.2225783199071884
+Train Epoch: 95 [512000/700160 (73%)] Train loss: 0.22175499573349952
+Train Epoch: 95 [576000/700160 (82%)] Train loss: 0.228324723392725
+Train Epoch: 95 [640000/700160 (91%)] Train loss: 0.2220168510079384
+Current learning rate: 0.00016
+Train Epoch: 96 [0/700160 (0%)] Train loss: 0.2311568260192871
+Train Epoch: 96 [64000/700160 (9%)] Train loss: 0.2110588939487934
+Train Epoch: 96 [128000/700160 (18%)] Train loss: 0.21264613047242165
+Train Epoch: 96 [192000/700160 (27%)] Train loss: 0.21028775185346604
+Train Epoch: 96 [256000/700160 (37%)] Train loss: 0.21330526664853097
+Train Epoch: 96 [320000/700160 (46%)] Train loss: 0.2150395019352436
+Train Epoch: 96 [384000/700160 (55%)] Train loss: 0.21390140920877457
+Train Epoch: 96 [448000/700160 (64%)] Train loss: 0.2088848301768303
+Train Epoch: 96 [512000/700160 (73%)] Train loss: 0.21345254257321358
+Train Epoch: 96 [576000/700160 (82%)] Train loss: 0.21524568513035774
+Train Epoch: 96 [640000/700160 (91%)] Train loss: 0.20820998281240463
+Current learning rate: 0.00016
+Train Epoch: 97 [0/700160 (0%)] Train loss: 0.21206307411193848
+Train Epoch: 97 [64000/700160 (9%)] Train loss: 0.1953538690507412
+Train Epoch: 97 [128000/700160 (18%)] Train loss: 0.1980051651597023
+Train Epoch: 97 [192000/700160 (27%)] Train loss: 0.20045500203967095
+Train Epoch: 97 [256000/700160 (37%)] Train loss: 0.19709328830242157
+Train Epoch: 97 [320000/700160 (46%)] Train loss: 0.20137785583734513
+Train Epoch: 97 [384000/700160 (55%)] Train loss: 0.20377529799938202
+Train Epoch: 97 [448000/700160 (64%)] Train loss: 0.19647135496139526
+Train Epoch: 97 [512000/700160 (73%)] Train loss: 0.20027945145964623
+Train Epoch: 97 [576000/700160 (82%)] Train loss: 0.20706284970045089
+Train Epoch: 97 [640000/700160 (91%)] Train loss: 0.1998937240242958
+Current learning rate: 0.00016
+Train Epoch: 98 [0/700160 (0%)] Train loss: 0.20348195731639862
+Train Epoch: 98 [64000/700160 (9%)] Train loss: 0.1865164041519165
+Train Epoch: 98 [128000/700160 (18%)] Train loss: 0.19243897065520288
+Train Epoch: 98 [192000/700160 (27%)] Train loss: 0.19069303289055825
+Train Epoch: 98 [256000/700160 (37%)] Train loss: 0.18813814118504524
+Train Epoch: 98 [320000/700160 (46%)] Train loss: 0.1882946139574051
+Train Epoch: 98 [384000/700160 (55%)] Train loss: 0.18752259463071824
+Train Epoch: 98 [448000/700160 (64%)] Train loss: 0.18807845190167427
+Train Epoch: 98 [512000/700160 (73%)] Train loss: 0.19161505341529847
+Train Epoch: 98 [576000/700160 (82%)] Train loss: 0.19480979323387146
+Train Epoch: 98 [640000/700160 (91%)] Train loss: 0.18682177618145943
+Current learning rate: 0.00016
+Train Epoch: 99 [0/700160 (0%)] Train loss: 0.1661374270915985
+Train Epoch: 99 [64000/700160 (9%)] Train loss: 0.1746097809076309
+Train Epoch: 99 [128000/700160 (18%)] Train loss: 0.17988821148872375
+Train Epoch: 99 [192000/700160 (27%)] Train loss: 0.18432944059371947
+Train Epoch: 99 [256000/700160 (37%)] Train loss: 0.17641192629933358
+Train Epoch: 99 [320000/700160 (46%)] Train loss: 0.1785352773964405
+Train Epoch: 99 [384000/700160 (55%)] Train loss: 0.17728180974721908
+Train Epoch: 99 [448000/700160 (64%)] Train loss: 0.175047065615654
+Train Epoch: 99 [512000/700160 (73%)] Train loss: 0.17817920193076134
+Train Epoch: 99 [576000/700160 (82%)] Train loss: 0.17855196610093116
+Train Epoch: 99 [640000/700160 (91%)] Train loss: 0.1808576574921608
+Dataset reinitialized with batch size 640
+Current learning rate: 0.00032
+Train Epoch: 100 [0/700160 (0%)] Train loss: 0.1610429584980011
+Train Epoch: 100 [64000/700160 (9%)] Train loss: 0.21821301862597464
+Train Epoch: 100 [128000/700160 (18%)] Train loss: 0.2384539656341076
+Train Epoch: 100 [192000/700160 (27%)] Train loss: 0.21883126407861708
+Train Epoch: 100 [256000/700160 (37%)] Train loss: 0.21395197361707688
+Train Epoch: 100 [320000/700160 (46%)] Train loss: 0.22316328287124634
+Train Epoch: 100 [384000/700160 (55%)] Train loss: 0.2041319179534912
+Train Epoch: 100 [448000/700160 (64%)] Train loss: 0.21201795890927314
+Train Epoch: 100 [512000/700160 (73%)] Train loss: 0.21222891852259637
+Train Epoch: 100 [576000/700160 (82%)] Train loss: 0.2029481963813305
+Train Epoch: 100 [640000/700160 (91%)] Train loss: 0.203397449105978
+Current learning rate: 0.00032
+Train Epoch: 101 [0/700160 (0%)] Train loss: 0.18385794758796692
+Train Epoch: 101 [64000/700160 (9%)] Train loss: 0.19068927362561225
+Train Epoch: 101 [128000/700160 (18%)] Train loss: 0.19157758131623268
+Train Epoch: 101 [192000/700160 (27%)] Train loss: 0.1910286697745323
+Train Epoch: 101 [256000/700160 (37%)] Train loss: 0.18554223328828812
+Train Epoch: 101 [320000/700160 (46%)] Train loss: 0.18646124988794327
+Train Epoch: 101 [384000/700160 (55%)] Train loss: 0.18872323855757714
+Train Epoch: 101 [448000/700160 (64%)] Train loss: 0.1855145962536335
+Train Epoch: 101 [512000/700160 (73%)] Train loss: 0.1845783245563507
+Train Epoch: 101 [576000/700160 (82%)] Train loss: 0.19221967473626136
+Train Epoch: 101 [640000/700160 (91%)] Train loss: 0.18307144999504088
+Test Epoch 101: Accuracy = 91.74% (137615/150000); Invalids = 0.01% (9/150000); Test loss = 0.1927564909483524
+exist -- acc: 93.25% (56781/60888); invalid: 0.00% (1/60888)
+shape -- acc: 94.81% (12222/12891); invalid: 0.00% (0/12891)
+number -- acc: 86.01% (30603/35579); invalid: 0.01% (2/35579)
+size -- acc: 93.93% (12277/13071); invalid: 0.05% (6/13071)
+material -- acc: 94.55% (13238/14001); invalid: 0.00% (0/14001)
+color -- acc: 92.07% (12494/13570); invalid: 0.00% (0/13570)
+Better accuracy found at epoch: 101
+Saving model
+Loaded hyperparameters from configuration ./config.json, model: original-sd: {'g_layers': [512, 512, 512, 512], 'question_injection_position': 0, 'f_fc1': 512, 'f_fc2': 1024, 'dropout': 0.05, 'lstm_hidden': 256, 'lstm_word_emb': 32, 'rl_in_size': 14}
+Building word dictionaries from all the words in the dataset...
+==> using cached dictionaries: D:\272_project\data\CLEVR\questions\CLEVR_built_dictionaries.pkl
+Word dictionary completed!
+Initializing CLEVR dataset...
+loading questions...
+==> using cached scenes: D:\272_project\data\CLEVR\scenes\CLEVR_trainA_scenes.pkl
+loading questions...
+==> using cached scenes: D:\272_project\data\CLEVR\scenes\CLEVR_valA_scenes.pkl
+CLEVR dataset initialized!
+Supposing original DeepMind model
+==> loading checkpoint ./models/RN_epoch_91.pt
+==> loaded checkpoint ./models/RN_epoch_91.pt
+Training (151 epochs) is starting...
+Dataset reinitialized with batch size 640
+Current learning rate: 0.0005
+Train Epoch: 92 [0/700160 (0%)] Train loss: 0.27059754729270935
+Train Epoch: 92 [64000/700160 (9%)] Train loss: 0.3957431587576866
+Train Epoch: 92 [128000/700160 (18%)] Train loss: 0.3238831153512001
+Train Epoch: 92 [192000/700160 (27%)] Train loss: 0.33007577747106553
+Train Epoch: 92 [256000/700160 (37%)] Train loss: 0.3373688593506813
+Train Epoch: 92 [320000/700160 (46%)] Train loss: 0.3397989895939827
+Train Epoch: 92 [384000/700160 (55%)] Train loss: 0.3368246373534203
+Train Epoch: 92 [448000/700160 (64%)] Train loss: 0.34328616738319395
+Train Epoch: 92 [512000/700160 (73%)] Train loss: 0.3387173303961754
+Train Epoch: 92 [576000/700160 (82%)] Train loss: 0.33037085384130477
+Train Epoch: 92 [640000/700160 (91%)] Train loss: 0.3320884594321251
+Current learning rate: 0.0005
+Train Epoch: 93 [0/700160 (0%)] Train loss: 0.27899208664894104
+Train Epoch: 93 [64000/700160 (9%)] Train loss: 0.31202789932489394
+Train Epoch: 93 [128000/700160 (18%)] Train loss: 0.3187687504291534
+Train Epoch: 93 [192000/700160 (27%)] Train loss: 0.35929961293935775
+Train Epoch: 93 [256000/700160 (37%)] Train loss: 0.300151447057724
+Train Epoch: 93 [320000/700160 (46%)] Train loss: 0.2975605575740337
+Train Epoch: 93 [384000/700160 (55%)] Train loss: 0.3052207627892494
+Train Epoch: 93 [448000/700160 (64%)] Train loss: 0.29521033361554144
+Train Epoch: 93 [512000/700160 (73%)] Train loss: 0.2939041551947594
+Train Epoch: 93 [576000/700160 (82%)] Train loss: 0.2940595841407776
+Train Epoch: 93 [640000/700160 (91%)] Train loss: 0.29256132408976554
+Current learning rate: 0.0005
+Train Epoch: 94 [0/700160 (0%)] Train loss: 0.2547646462917328
+Train Epoch: 94 [64000/700160 (9%)] Train loss: 0.27174159228801725
+Train Epoch: 94 [128000/700160 (18%)] Train loss: 0.2686272867023945
+Train Epoch: 94 [192000/700160 (27%)] Train loss: 0.26638171076774597
+Train Epoch: 94 [256000/700160 (37%)] Train loss: 0.26197570607066156
+Train Epoch: 94 [320000/700160 (46%)] Train loss: 0.2692228434979916
+Train Epoch: 94 [384000/700160 (55%)] Train loss: 0.2662367720901966
+Train Epoch: 94 [448000/700160 (64%)] Train loss: 0.2584939286112785
+Train Epoch: 94 [512000/700160 (73%)] Train loss: 0.25278671458363533
+Train Epoch: 94 [576000/700160 (82%)] Train loss: 0.2603292782604694
+Train Epoch: 94 [640000/700160 (91%)] Train loss: 0.2553562144935131
+Current learning rate: 0.0005
+Train Epoch: 95 [0/700160 (0%)] Train loss: 0.27201396226882935
+Train Epoch: 95 [64000/700160 (9%)] Train loss: 0.23272697120904923
+Train Epoch: 95 [128000/700160 (18%)] Train loss: 0.23652927666902543
+Train Epoch: 95 [192000/700160 (27%)] Train loss: 0.23592116117477416
+Train Epoch: 95 [256000/700160 (37%)] Train loss: 0.23043783530592918
+Train Epoch: 95 [320000/700160 (46%)] Train loss: 0.22967136055231094
+Train Epoch: 95 [384000/700160 (55%)] Train loss: 0.23262376785278321
+Train Epoch: 95 [448000/700160 (64%)] Train loss: 0.23135296985507012
+Train Epoch: 95 [512000/700160 (73%)] Train loss: 0.2188494785130024
+Train Epoch: 95 [576000/700160 (82%)] Train loss: 0.23113057151436806
+Train Epoch: 95 [640000/700160 (91%)] Train loss: 0.22008774369955064
+Current learning rate: 0.0005
+Train Epoch: 96 [0/700160 (0%)] Train loss: 0.18899138271808624
+Train Epoch: 96 [64000/700160 (9%)] Train loss: 0.20292243346571923
+Train Epoch: 96 [128000/700160 (18%)] Train loss: 0.2045922166109085
+Train Epoch: 96 [192000/700160 (27%)] Train loss: 0.211880152374506
+Train Epoch: 96 [256000/700160 (37%)] Train loss: 0.2021788902580738
+Train Epoch: 96 [320000/700160 (46%)] Train loss: 0.20391815930604934
+Train Epoch: 96 [384000/700160 (55%)] Train loss: 0.2098650525510311
+Train Epoch: 96 [448000/700160 (64%)] Train loss: 0.20131517097353935
+Train Epoch: 96 [512000/700160 (73%)] Train loss: 0.19259589597582816
+Train Epoch: 96 [576000/700160 (82%)] Train loss: 0.18767558857798577
+Train Epoch: 96 [640000/700160 (91%)] Train loss: 0.1884985975921154
+Current learning rate: 0.0005
+Train Epoch: 97 [0/700160 (0%)] Train loss: 0.20924654603004456
+Train Epoch: 97 [64000/700160 (9%)] Train loss: 0.1720698956400156
+Train Epoch: 97 [128000/700160 (18%)] Train loss: 0.17339922219514847
+Train Epoch: 97 [192000/700160 (27%)] Train loss: 0.1737338474392891
+Train Epoch: 97 [256000/700160 (37%)] Train loss: 0.1733943273127079
+Train Epoch: 97 [320000/700160 (46%)] Train loss: 0.17926522105932235
+Train Epoch: 97 [384000/700160 (55%)] Train loss: 0.17472960457205772
+Train Epoch: 97 [448000/700160 (64%)] Train loss: 0.16331404834985733
+Train Epoch: 97 [512000/700160 (73%)] Train loss: 0.16128816090524198
+Train Epoch: 97 [576000/700160 (82%)] Train loss: 0.16615642167627812
+Train Epoch: 97 [640000/700160 (91%)] Train loss: 0.16170490019023417
+Current learning rate: 0.0005
+Train Epoch: 98 [0/700160 (0%)] Train loss: 0.13435836136341095
+Train Epoch: 98 [64000/700160 (9%)] Train loss: 0.14931138843297959
+Train Epoch: 98 [128000/700160 (18%)] Train loss: 0.14635278560221196
+Train Epoch: 98 [192000/700160 (27%)] Train loss: 0.15278979651629926
+Train Epoch: 98 [256000/700160 (37%)] Train loss: 0.16086018994450568
+Train Epoch: 98 [320000/700160 (46%)] Train loss: 0.1548077294230461
+Train Epoch: 98 [384000/700160 (55%)] Train loss: 0.1435568618774414
+Train Epoch: 98 [448000/700160 (64%)] Train loss: 0.14224132522940636
+Train Epoch: 98 [512000/700160 (73%)] Train loss: 0.14855737417936324
+Train Epoch: 98 [576000/700160 (82%)] Train loss: 0.13751722306013106
+Train Epoch: 98 [640000/700160 (91%)] Train loss: 0.14110084846615792
+Current learning rate: 0.0005
+Train Epoch: 99 [0/700160 (0%)] Train loss: 0.1442645788192749
+Train Epoch: 99 [64000/700160 (9%)] Train loss: 0.1302114749699831
+Train Epoch: 99 [128000/700160 (18%)] Train loss: 0.1336940723657608
+Train Epoch: 99 [192000/700160 (27%)] Train loss: 0.13376248866319657
+Train Epoch: 99 [256000/700160 (37%)] Train loss: 0.13120988503098488
+Train Epoch: 99 [320000/700160 (46%)] Train loss: 0.13378864891827105
+Train Epoch: 99 [384000/700160 (55%)] Train loss: 0.1355288676917553
+Train Epoch: 99 [448000/700160 (64%)] Train loss: 0.13217231787741185
+Train Epoch: 99 [512000/700160 (73%)] Train loss: 0.13726147010922432
+Train Epoch: 99 [576000/700160 (82%)] Train loss: 0.13134655311703683
+Train Epoch: 99 [640000/700160 (91%)] Train loss: 0.13048486828804015
+Dataset reinitialized with batch size 640
+Current learning rate: 0.0005
+Train Epoch: 100 [0/700160 (0%)] Train loss: 0.14592328667640686
+Train Epoch: 100 [64000/700160 (9%)] Train loss: 0.12267692498862744
+Train Epoch: 100 [128000/700160 (18%)] Train loss: 0.12922204665839673
+Train Epoch: 100 [192000/700160 (27%)] Train loss: 0.11927675925195218
+Train Epoch: 100 [256000/700160 (37%)] Train loss: 0.12751099668443203
+Train Epoch: 100 [320000/700160 (46%)] Train loss: 0.12157262340188027
+Train Epoch: 100 [384000/700160 (55%)] Train loss: 0.11818674340844154
+Train Epoch: 100 [448000/700160 (64%)] Train loss: 0.11842830747365951
+Train Epoch: 100 [512000/700160 (73%)] Train loss: 0.12313061758875847
+Train Epoch: 100 [576000/700160 (82%)] Train loss: 0.12611400380730628
+Train Epoch: 100 [640000/700160 (91%)] Train loss: 0.12017097532749176
+Current learning rate: 0.0005
+Train Epoch: 101 [0/700160 (0%)] Train loss: 0.1214873418211937
+Train Epoch: 101 [64000/700160 (9%)] Train loss: 0.11156655550003051
+Train Epoch: 101 [128000/700160 (18%)] Train loss: 0.11715104401111603
+Train Epoch: 101 [192000/700160 (27%)] Train loss: 0.11412649996578693
+Train Epoch: 101 [256000/700160 (37%)] Train loss: 0.1185717136412859
+Train Epoch: 101 [320000/700160 (46%)] Train loss: 0.11384829699993133
+Train Epoch: 101 [384000/700160 (55%)] Train loss: 0.11141432002186775
+Train Epoch: 101 [448000/700160 (64%)] Train loss: 0.11349139869213104
+Train Epoch: 101 [512000/700160 (73%)] Train loss: 0.11298346996307373
+Train Epoch: 101 [576000/700160 (82%)] Train loss: 0.1134947295486927
+Train Epoch: 101 [640000/700160 (91%)] Train loss: 0.11711125940084458
+Test Epoch 101: Accuracy = 94.75% (142121/150000); Invalids = 0.01% (9/150000); Test loss = 0.1254310058152422
+exist -- acc: 95.28% (58016/60888); invalid: 0.00% (0/60888)
+shape -- acc: 97.96% (12628/12891); invalid: 0.03% (4/12891)
+number -- acc: 90.29% (32126/35579); invalid: 0.01% (4/35579)
+size -- acc: 96.55% (12620/13071); invalid: 0.00% (0/13071)
+material -- acc: 97.31% (13625/14001); invalid: 0.00% (0/14001)
+color -- acc: 96.58% (13106/13570); invalid: 0.01% (1/13570)
+Better accuracy found at epoch: 101
+Saving model
+Current learning rate: 0.0005
+Train Epoch: 102 [0/700160 (0%)] Train loss: 0.1044703871011734
+Train Epoch: 102 [64000/700160 (9%)] Train loss: 0.10598361246287823
+Train Epoch: 102 [128000/700160 (18%)] Train loss: 0.11351445533335208
+Train Epoch: 102 [192000/700160 (27%)] Train loss: 0.11052216075360775
+Train Epoch: 102 [256000/700160 (37%)] Train loss: 0.10977336980402469
+Train Epoch: 102 [320000/700160 (46%)] Train loss: 0.1114943639189005
+Train Epoch: 102 [384000/700160 (55%)] Train loss: 0.10965487219393254
+Train Epoch: 102 [448000/700160 (64%)] Train loss: 0.11055984765291214
+Train Epoch: 102 [512000/700160 (73%)] Train loss: 0.11094953060150146
+Train Epoch: 102 [576000/700160 (82%)] Train loss: 0.10745405025780201
+Train Epoch: 102 [640000/700160 (91%)] Train loss: 0.10995787471532821
+Current learning rate: 0.0005
+Train Epoch: 103 [0/700160 (0%)] Train loss: 0.10102204978466034
+Train Epoch: 103 [64000/700160 (9%)] Train loss: 0.10167780384421349
+Train Epoch: 103 [128000/700160 (18%)] Train loss: 0.11489375822246074
+Train Epoch: 103 [192000/700160 (27%)] Train loss: 0.10032457783818245
+Train Epoch: 103 [256000/700160 (37%)] Train loss: 0.09976115353405475
+Train Epoch: 103 [320000/700160 (46%)] Train loss: 0.10374202430248261
+Train Epoch: 103 [384000/700160 (55%)] Train loss: 0.1047985665500164
+Train Epoch: 103 [448000/700160 (64%)] Train loss: 0.10929133392870426
+Train Epoch: 103 [512000/700160 (73%)] Train loss: 0.10178555928170681
+Train Epoch: 103 [576000/700160 (82%)] Train loss: 0.09884194321930409
+Train Epoch: 103 [640000/700160 (91%)] Train loss: 0.1021985174715519
+Current learning rate: 0.0005
+Train Epoch: 104 [0/700160 (0%)] Train loss: 0.0986286997795105
+Train Epoch: 104 [64000/700160 (9%)] Train loss: 0.0965790994092822
+Train Epoch: 104 [128000/700160 (18%)] Train loss: 0.10142247226089239
+Train Epoch: 104 [192000/700160 (27%)] Train loss: 0.09473736263811589
+Train Epoch: 104 [256000/700160 (37%)] Train loss: 0.09510384887456894
+Train Epoch: 104 [320000/700160 (46%)] Train loss: 0.09703928627073764
+Train Epoch: 104 [384000/700160 (55%)] Train loss: 0.10227208964526653
+Train Epoch: 104 [448000/700160 (64%)] Train loss: 0.09957964815199376
+Train Epoch: 104 [512000/700160 (73%)] Train loss: 0.10131767455488444
+Train Epoch: 104 [576000/700160 (82%)] Train loss: 0.09681627355515957
+Train Epoch: 104 [640000/700160 (91%)] Train loss: 0.10034986425191164
+Current learning rate: 0.0005
+Train Epoch: 105 [0/700160 (0%)] Train loss: 0.11651621758937836
+Train Epoch: 105 [64000/700160 (9%)] Train loss: 0.09291708394885063
+Train Epoch: 105 [128000/700160 (18%)] Train loss: 0.08861489664763213
+Train Epoch: 105 [192000/700160 (27%)] Train loss: 0.09369212880730629
+Train Epoch: 105 [256000/700160 (37%)] Train loss: 0.09798022709786892
+Train Epoch: 105 [320000/700160 (46%)] Train loss: 0.09635458786040545
+Train Epoch: 105 [384000/700160 (55%)] Train loss: 0.09727276608347893
+Train Epoch: 105 [448000/700160 (64%)] Train loss: 0.0979529782012105
+Train Epoch: 105 [512000/700160 (73%)] Train loss: 0.09713415361940861
+Train Epoch: 105 [576000/700160 (82%)] Train loss: 0.0971820031479001
+Train Epoch: 105 [640000/700160 (91%)] Train loss: 0.09560492053627968
+Current learning rate: 0.0005
+Train Epoch: 106 [0/700160 (0%)] Train loss: 0.09586866199970245
+Train Epoch: 106 [64000/700160 (9%)] Train loss: 0.08986534047871828
+Train Epoch: 106 [128000/700160 (18%)] Train loss: 0.09108290202915668
+Train Epoch: 106 [192000/700160 (27%)] Train loss: 0.0897328931465745
+Train Epoch: 106 [256000/700160 (37%)] Train loss: 0.0884505669027567
+Train Epoch: 106 [320000/700160 (46%)] Train loss: 0.08991137839853763
+Train Epoch: 106 [384000/700160 (55%)] Train loss: 0.09431208107620477
+Train Epoch: 106 [448000/700160 (64%)] Train loss: 0.10029370173811912
+Train Epoch: 106 [512000/700160 (73%)] Train loss: 0.09065668351948261
+Train Epoch: 106 [576000/700160 (82%)] Train loss: 0.0869454799219966
+Train Epoch: 106 [640000/700160 (91%)] Train loss: 0.08917992167174817
+Current learning rate: 0.0005
+Train Epoch: 107 [0/700160 (0%)] Train loss: 0.1020246297121048
+Train Epoch: 107 [64000/700160 (9%)] Train loss: 0.08664590757340193
+Train Epoch: 107 [128000/700160 (18%)] Train loss: 0.08790201406925917
+Train Epoch: 107 [192000/700160 (27%)] Train loss: 0.0861005326360464
+Train Epoch: 107 [256000/700160 (37%)] Train loss: 0.08941392831504345
+Train Epoch: 107 [320000/700160 (46%)] Train loss: 0.08594463482499122
+Train Epoch: 107 [384000/700160 (55%)] Train loss: 0.08598757307976485
+Train Epoch: 107 [448000/700160 (64%)] Train loss: 0.08864109456539154
+Train Epoch: 107 [512000/700160 (73%)] Train loss: 0.08756352074444294
+Train Epoch: 107 [576000/700160 (82%)] Train loss: 0.08675642628222704
+Train Epoch: 107 [640000/700160 (91%)] Train loss: 0.08443968813866377
+Current learning rate: 0.0005
+Train Epoch: 108 [0/700160 (0%)] Train loss: 0.0954204648733139
+Train Epoch: 108 [64000/700160 (9%)] Train loss: 0.09200791981071234
+Train Epoch: 108 [128000/700160 (18%)] Train loss: 0.08324047841131688
+Train Epoch: 108 [192000/700160 (27%)] Train loss: 0.08275299169123172
+Train Epoch: 108 [256000/700160 (37%)] Train loss: 0.08407354101538658
+Train Epoch: 108 [320000/700160 (46%)] Train loss: 0.08338219918310642
+Train Epoch: 108 [384000/700160 (55%)] Train loss: 0.08609978877007961
+Train Epoch: 108 [448000/700160 (64%)] Train loss: 0.08225934099406004
+Train Epoch: 108 [512000/700160 (73%)] Train loss: 0.0793403796106577
+Train Epoch: 108 [576000/700160 (82%)] Train loss: 0.087786351069808
+Train Epoch: 108 [640000/700160 (91%)] Train loss: 0.0843176232650876
+Current learning rate: 0.0005
+Train Epoch: 109 [0/700160 (0%)] Train loss: 0.0953284353017807
+Train Epoch: 109 [64000/700160 (9%)] Train loss: 0.08356089927256108
+Train Epoch: 109 [128000/700160 (18%)] Train loss: 0.08710082348436117
+Train Epoch: 109 [192000/700160 (27%)] Train loss: 0.08315957807004452
+Train Epoch: 109 [256000/700160 (37%)] Train loss: 0.08239734776318074
+Train Epoch: 109 [320000/700160 (46%)] Train loss: 0.07989470195025206
+Train Epoch: 109 [384000/700160 (55%)] Train loss: 0.07820270676165819
+Train Epoch: 109 [448000/700160 (64%)] Train loss: 0.07973344381898642
+Train Epoch: 109 [512000/700160 (73%)] Train loss: 0.08119132209569216
+Train Epoch: 109 [576000/700160 (82%)] Train loss: 0.08222851131111383
+Train Epoch: 109 [640000/700160 (91%)] Train loss: 0.08463997762650251
+Current learning rate: 0.0005
+Train Epoch: 110 [0/700160 (0%)] Train loss: 0.06348617374897003
+Train Epoch: 110 [64000/700160 (9%)] Train loss: 0.07651288311928511
+Train Epoch: 110 [128000/700160 (18%)] Train loss: 0.07915659643709659
+Train Epoch: 110 [192000/700160 (27%)] Train loss: 0.07678316473960876
+Train Epoch: 110 [256000/700160 (37%)] Train loss: 0.08032061237841845
+Train Epoch: 110 [320000/700160 (46%)] Train loss: 0.08389163512736558
+Train Epoch: 110 [384000/700160 (55%)] Train loss: 0.08536756180226802
+Train Epoch: 110 [448000/700160 (64%)] Train loss: 0.07995892938226462
+Train Epoch: 110 [512000/700160 (73%)] Train loss: 0.07557162765413522
+Train Epoch: 110 [576000/700160 (82%)] Train loss: 0.08038705278187991
+Train Epoch: 110 [640000/700160 (91%)] Train loss: 0.08497585121542216
+Current learning rate: 0.0005
+Train Epoch: 111 [0/700160 (0%)] Train loss: 0.06420166790485382
+Train Epoch: 111 [64000/700160 (9%)] Train loss: 0.07344074349850416
+Train Epoch: 111 [128000/700160 (18%)] Train loss: 0.07910962518304586
+Train Epoch: 111 [192000/700160 (27%)] Train loss: 0.08066459883004427
+Train Epoch: 111 [256000/700160 (37%)] Train loss: 0.0758901059627533
+Train Epoch: 111 [320000/700160 (46%)] Train loss: 0.07857127293944359
+Train Epoch: 111 [384000/700160 (55%)] Train loss: 0.0815903702378273
+Train Epoch: 111 [448000/700160 (64%)] Train loss: 0.0738809548690915
+Train Epoch: 111 [512000/700160 (73%)] Train loss: 0.07620997175574303
+Train Epoch: 111 [576000/700160 (82%)] Train loss: 0.07434007622301579
+Train Epoch: 111 [640000/700160 (91%)] Train loss: 0.07353969305753708
+Test Epoch 111: Accuracy = 96.35% (144530/150000); Invalids = 0.00% (0/150000); Test loss = 0.08341191228716932
+exist -- acc: 96.58% (58805/60888); invalid: 0.00% (0/60888)
+shape -- acc: 99.26% (12795/12891); invalid: 0.00% (0/12891)
+number -- acc: 92.77% (33008/35579); invalid: 0.00% (0/35579)
+size -- acc: 98.27% (12845/13071); invalid: 0.00% (0/13071)
+material -- acc: 98.40% (13777/14001); invalid: 0.00% (0/14001)
+color -- acc: 98.01% (13300/13570); invalid: 0.00% (0/13570)
+Better accuracy found at epoch: 111
+Saving model
+Current learning rate: 0.0005
+Train Epoch: 112 [0/700160 (0%)] Train loss: 0.08396591246128082
+Train Epoch: 112 [64000/700160 (9%)] Train loss: 0.07665100522339344
+Train Epoch: 112 [128000/700160 (18%)] Train loss: 0.0814458191394806
+Train Epoch: 112 [192000/700160 (27%)] Train loss: 0.07526498444378377
+Train Epoch: 112 [256000/700160 (37%)] Train loss: 0.07907579082995653
+Train Epoch: 112 [320000/700160 (46%)] Train loss: 0.07511642042547464
+Train Epoch: 112 [384000/700160 (55%)] Train loss: 0.07538932260125876
+Train Epoch: 112 [448000/700160 (64%)] Train loss: 0.07409595858305693
+Train Epoch: 112 [512000/700160 (73%)] Train loss: 0.07381149422377348
+Train Epoch: 112 [576000/700160 (82%)] Train loss: 0.07756038039922714
+Train Epoch: 112 [640000/700160 (91%)] Train loss: 0.07534556355327368
+Current learning rate: 0.0005
+Train Epoch: 113 [0/700160 (0%)] Train loss: 0.05256044864654541
+Train Epoch: 113 [64000/700160 (9%)] Train loss: 0.07138344496488572
+Train Epoch: 113 [128000/700160 (18%)] Train loss: 0.07706517908722162
+Train Epoch: 113 [192000/700160 (27%)] Train loss: 0.07084189169108868
+Train Epoch: 113 [256000/700160 (37%)] Train loss: 0.07008866880089044
+Train Epoch: 113 [320000/700160 (46%)] Train loss: 0.07283806197345256
+Train Epoch: 113 [384000/700160 (55%)] Train loss: 0.07628970868885517
+Train Epoch: 113 [448000/700160 (64%)] Train loss: 0.07588307183235883
+Train Epoch: 113 [512000/700160 (73%)] Train loss: 0.07245148524641991
+Train Epoch: 113 [576000/700160 (82%)] Train loss: 0.07388934154063463
+Train Epoch: 113 [640000/700160 (91%)] Train loss: 0.07086745299398899
+Current learning rate: 0.0005
+Train Epoch: 114 [0/700160 (0%)] Train loss: 0.07484333217144012
+Train Epoch: 114 [64000/700160 (9%)] Train loss: 0.06867491278797389
+Train Epoch: 114 [128000/700160 (18%)] Train loss: 0.07755235094577075
+Train Epoch: 114 [192000/700160 (27%)] Train loss: 0.06687249444425106
+Train Epoch: 114 [256000/700160 (37%)] Train loss: 0.06718239229172468
+Train Epoch: 114 [320000/700160 (46%)] Train loss: 0.07135361213237047
+Train Epoch: 114 [384000/700160 (55%)] Train loss: 0.06900591012090444
+Train Epoch: 114 [448000/700160 (64%)] Train loss: 0.06771437119692564
+Train Epoch: 114 [512000/700160 (73%)] Train loss: 0.07026128042489291
+Train Epoch: 114 [576000/700160 (82%)] Train loss: 0.06985084906220436
+Train Epoch: 114 [640000/700160 (91%)] Train loss: 0.06870270438492299
+Current learning rate: 0.0005
+Train Epoch: 115 [0/700160 (0%)] Train loss: 0.0638672336935997
+Train Epoch: 115 [64000/700160 (9%)] Train loss: 0.07126608658581972
+Train Epoch: 115 [128000/700160 (18%)] Train loss: 0.060699311830103395
+Train Epoch: 115 [192000/700160 (27%)] Train loss: 0.06398993898183107
+Train Epoch: 115 [256000/700160 (37%)] Train loss: 0.062375941909849644
+Train Epoch: 115 [320000/700160 (46%)] Train loss: 0.06299367675557732
+Train Epoch: 115 [384000/700160 (55%)] Train loss: 0.07243635646998882
+Train Epoch: 115 [448000/700160 (64%)] Train loss: 0.07137291308492422
+Train Epoch: 115 [512000/700160 (73%)] Train loss: 0.06323137052357197
+Train Epoch: 115 [576000/700160 (82%)] Train loss: 0.06311962086707354
+Train Epoch: 115 [640000/700160 (91%)] Train loss: 0.06571318175643683
+Current learning rate: 0.0005
+Train Epoch: 116 [0/700160 (0%)] Train loss: 0.05553511530160904
+Train Epoch: 116 [64000/700160 (9%)] Train loss: 0.0625179372727871
+Train Epoch: 116 [128000/700160 (18%)] Train loss: 0.06380517777055501
+Train Epoch: 116 [192000/700160 (27%)] Train loss: 0.05898629907518625
+Train Epoch: 116 [256000/700160 (37%)] Train loss: 0.06371162869036198
+Train Epoch: 116 [320000/700160 (46%)] Train loss: 0.062285481318831444
+Train Epoch: 116 [384000/700160 (55%)] Train loss: 0.06422799922525883
+Train Epoch: 116 [448000/700160 (64%)] Train loss: 0.0646248648315668
+Train Epoch: 116 [512000/700160 (73%)] Train loss: 0.06129829093813896
+Train Epoch: 116 [576000/700160 (82%)] Train loss: 0.06479036964476109
+Train Epoch: 116 [640000/700160 (91%)] Train loss: 0.0650553086772561
+Current learning rate: 0.0005
+Train Epoch: 117 [0/700160 (0%)] Train loss: 0.05241866782307625
+Train Epoch: 117 [64000/700160 (9%)] Train loss: 0.06032949063926935
+Train Epoch: 117 [128000/700160 (18%)] Train loss: 0.059428846202790736
+Train Epoch: 117 [192000/700160 (27%)] Train loss: 0.06238309744745493
+Train Epoch: 117 [256000/700160 (37%)] Train loss: 0.0632717078179121
+Train Epoch: 117 [320000/700160 (46%)] Train loss: 0.059261056669056414
+Train Epoch: 117 [384000/700160 (55%)] Train loss: 0.0613704227656126
+Train Epoch: 117 [448000/700160 (64%)] Train loss: 0.0666000048816204
+Train Epoch: 117 [512000/700160 (73%)] Train loss: 0.06731148805469274
+Train Epoch: 117 [576000/700160 (82%)] Train loss: 0.0603403795696795
+Train Epoch: 117 [640000/700160 (91%)] Train loss: 0.0583014840260148
+Current learning rate: 0.0005
+Train Epoch: 118 [0/700160 (0%)] Train loss: 0.07369197905063629
+Train Epoch: 118 [64000/700160 (9%)] Train loss: 0.05566967625170946
+Train Epoch: 118 [128000/700160 (18%)] Train loss: 0.05506643455475569
+Train Epoch: 118 [192000/700160 (27%)] Train loss: 0.058765744026750326
+Train Epoch: 118 [256000/700160 (37%)] Train loss: 0.06369096726179123
+Train Epoch: 118 [320000/700160 (46%)] Train loss: 0.056253554783761504
+Train Epoch: 118 [384000/700160 (55%)] Train loss: 0.05550936747342348
+Train Epoch: 118 [448000/700160 (64%)] Train loss: 0.059396000392735
+Train Epoch: 118 [512000/700160 (73%)] Train loss: 0.05828640077263117
+Train Epoch: 118 [576000/700160 (82%)] Train loss: 0.05948031432926655
+Train Epoch: 118 [640000/700160 (91%)] Train loss: 0.05376396752893925
+Current learning rate: 0.0005
+Train Epoch: 119 [0/700160 (0%)] Train loss: 0.05735594034194946
+Train Epoch: 119 [64000/700160 (9%)] Train loss: 0.05806835720315576
+Train Epoch: 119 [128000/700160 (18%)] Train loss: 0.05641865545883775
+Train Epoch: 119 [192000/700160 (27%)] Train loss: 0.051211480516940355
+Train Epoch: 119 [256000/700160 (37%)] Train loss: 0.06553024128079414
+Train Epoch: 119 [320000/700160 (46%)] Train loss: 0.05595505300909281
+Train Epoch: 119 [384000/700160 (55%)] Train loss: 0.05644168503582478
+Train Epoch: 119 [448000/700160 (64%)] Train loss: 0.05134829271584749
+Train Epoch: 119 [512000/700160 (73%)] Train loss: 0.04634129390120506
+Train Epoch: 119 [576000/700160 (82%)] Train loss: 0.05004576411098242
+Train Epoch: 119 [640000/700160 (91%)] Train loss: 0.04990488609299064
+Dataset reinitialized with batch size 640
+Current learning rate: 0.0005
+Train Epoch: 120 [0/700160 (0%)] Train loss: 0.04700165241956711
+Train Epoch: 120 [64000/700160 (9%)] Train loss: 0.05068999633193016
+Train Epoch: 120 [128000/700160 (18%)] Train loss: 0.047835628353059295
+Train Epoch: 120 [192000/700160 (27%)] Train loss: 0.05233447788283229
+Train Epoch: 120 [256000/700160 (37%)] Train loss: 0.049308932181447745
+Train Epoch: 120 [320000/700160 (46%)] Train loss: 0.05451179284602404
+Train Epoch: 120 [384000/700160 (55%)] Train loss: 0.05095860650762916
+Train Epoch: 120 [448000/700160 (64%)] Train loss: 0.05639187552034855
+Train Epoch: 120 [512000/700160 (73%)] Train loss: 0.05403520565479994
+Train Epoch: 120 [576000/700160 (82%)] Train loss: 0.05104583989828825
+Train Epoch: 120 [640000/700160 (91%)] Train loss: 0.05224307021126151
+Current learning rate: 0.0005
+Train Epoch: 121 [0/700160 (0%)] Train loss: 0.06287475675344467
+Train Epoch: 121 [64000/700160 (9%)] Train loss: 0.05639414984732866
+Train Epoch: 121 [128000/700160 (18%)] Train loss: 0.04747213799506426
+Train Epoch: 121 [192000/700160 (27%)] Train loss: 0.052976715564727786
+Train Epoch: 121 [256000/700160 (37%)] Train loss: 0.046066255774348974
+Train Epoch: 121 [320000/700160 (46%)] Train loss: 0.05643452515825629
+Train Epoch: 121 [384000/700160 (55%)] Train loss: 0.054056265577673915
+Train Epoch: 121 [448000/700160 (64%)] Train loss: 0.050378250032663344
+Train Epoch: 121 [512000/700160 (73%)] Train loss: 0.050102350395172836
+Train Epoch: 121 [576000/700160 (82%)] Train loss: 0.05101270064711571
+Train Epoch: 121 [640000/700160 (91%)] Train loss: 0.04685623778030276
+Test Epoch 121: Accuracy = 97.72% (146577/150000); Invalids = 0.00% (0/150000); Test loss = 0.054947351323480303
+exist -- acc: 97.82% (59560/60888); invalid: 0.00% (0/60888)
+shape -- acc: 99.60% (12839/12891); invalid: 0.00% (0/12891)
+number -- acc: 94.99% (33795/35579); invalid: 0.00% (0/35579)
+size -- acc: 99.66% (13026/13071); invalid: 0.00% (0/13071)
+material -- acc: 99.60% (13945/14001); invalid: 0.00% (0/14001)
+color -- acc: 98.84% (13412/13570); invalid: 0.00% (0/13570)
+Better accuracy found at epoch: 121
+Saving model
+Current learning rate: 0.0005
+Train Epoch: 122 [0/700160 (0%)] Train loss: 0.02291524037718773
+Train Epoch: 122 [64000/700160 (9%)] Train loss: 0.044972405396401884
+Train Epoch: 122 [128000/700160 (18%)] Train loss: 0.05089851474389434
+Train Epoch: 122 [192000/700160 (27%)] Train loss: 0.04751349154859781
+Train Epoch: 122 [256000/700160 (37%)] Train loss: 0.04764269536361098
+Train Epoch: 122 [320000/700160 (46%)] Train loss: 0.05166487779468298
+Train Epoch: 122 [384000/700160 (55%)] Train loss: 0.04929957678541541
+Train Epoch: 122 [448000/700160 (64%)] Train loss: 0.049210484325885775
+Train Epoch: 122 [512000/700160 (73%)] Train loss: 0.04570196364074945
+Train Epoch: 122 [576000/700160 (82%)] Train loss: 0.047671929281204936
+Train Epoch: 122 [640000/700160 (91%)] Train loss: 0.04839860375970602
+Current learning rate: 0.0005
+Train Epoch: 123 [0/700160 (0%)] Train loss: 0.04965905472636223
+Train Epoch: 123 [64000/700160 (9%)] Train loss: 0.04910270925611258
+Train Epoch: 123 [128000/700160 (18%)] Train loss: 0.05467176899313927
+Train Epoch: 123 [192000/700160 (27%)] Train loss: 0.04720175139605999
+Train Epoch: 123 [256000/700160 (37%)] Train loss: 0.05342732870951295
+Train Epoch: 123 [320000/700160 (46%)] Train loss: 0.044520724713802334
+Train Epoch: 123 [384000/700160 (55%)] Train loss: 0.04894341640174389
+Train Epoch: 123 [448000/700160 (64%)] Train loss: 0.046705579049885274
+Train Epoch: 123 [512000/700160 (73%)] Train loss: 0.047126190289855006
+Train Epoch: 123 [576000/700160 (82%)] Train loss: 0.04386432899162173
+Train Epoch: 123 [640000/700160 (91%)] Train loss: 0.04802884124219418
+Current learning rate: 0.0005
+Train Epoch: 124 [0/700160 (0%)] Train loss: 0.03983711823821068
+Train Epoch: 124 [64000/700160 (9%)] Train loss: 0.04116664811968804
+Train Epoch: 124 [128000/700160 (18%)] Train loss: 0.0521609659306705
+Train Epoch: 124 [192000/700160 (27%)] Train loss: 0.049406044706702235
+Train Epoch: 124 [256000/700160 (37%)] Train loss: 0.04384927287697792
+Train Epoch: 124 [320000/700160 (46%)] Train loss: 0.043991505904123186
+Train Epoch: 124 [384000/700160 (55%)] Train loss: 0.04368461983278394
+Train Epoch: 124 [448000/700160 (64%)] Train loss: 0.043642441499978306
+Train Epoch: 124 [512000/700160 (73%)] Train loss: 0.04846436768770218
+Train Epoch: 124 [576000/700160 (82%)] Train loss: 0.04678434148430824
+Train Epoch: 124 [640000/700160 (91%)] Train loss: 0.057831642609089615
+Current learning rate: 0.0005
+Train Epoch: 125 [0/700160 (0%)] Train loss: 0.0433959886431694
+Train Epoch: 125 [64000/700160 (9%)] Train loss: 0.04135796120390296
+Train Epoch: 125 [128000/700160 (18%)] Train loss: 0.04608310839161277
+Train Epoch: 125 [192000/700160 (27%)] Train loss: 0.05085126793012023
+Train Epoch: 125 [256000/700160 (37%)] Train loss: 0.04161785067990422
+Train Epoch: 125 [320000/700160 (46%)] Train loss: 0.04150051927193999
+Train Epoch: 125 [384000/700160 (55%)] Train loss: 0.04383460849523544
+Train Epoch: 125 [448000/700160 (64%)] Train loss: 0.04320735599845648
+Train Epoch: 125 [512000/700160 (73%)] Train loss: 0.042955067716538904
+Train Epoch: 125 [576000/700160 (82%)] Train loss: 0.04462428918108344
+Train Epoch: 125 [640000/700160 (91%)] Train loss: 0.04615752866491676
+Current learning rate: 0.0005
+Train Epoch: 126 [0/700160 (0%)] Train loss: 0.058318935334682465
+Train Epoch: 126 [64000/700160 (9%)] Train loss: 0.04731871582567692
+Train Epoch: 126 [128000/700160 (18%)] Train loss: 0.0451563504152
+Train Epoch: 126 [192000/700160 (27%)] Train loss: 0.0444630735181272
+Train Epoch: 126 [256000/700160 (37%)] Train loss: 0.045745844915509225
+Train Epoch: 126 [320000/700160 (46%)] Train loss: 0.04329761505126953
+Train Epoch: 126 [384000/700160 (55%)] Train loss: 0.04663738613948226
+Train Epoch: 126 [448000/700160 (64%)] Train loss: 0.05500064879655838
+Train Epoch: 126 [512000/700160 (73%)] Train loss: 0.044836682323366406
+Train Epoch: 126 [576000/700160 (82%)] Train loss: 0.04340181592851877
+Train Epoch: 126 [640000/700160 (91%)] Train loss: 0.045956442710012195
+Current learning rate: 0.0005
+Train Epoch: 127 [0/700160 (0%)] Train loss: 0.03639781102538109
+Train Epoch: 127 [64000/700160 (9%)] Train loss: 0.03738785993307829
+Train Epoch: 127 [128000/700160 (18%)] Train loss: 0.03754443412646651
+Train Epoch: 127 [192000/700160 (27%)] Train loss: 0.038836067020893095
+Train Epoch: 127 [256000/700160 (37%)] Train loss: 0.04584242906421423
+Train Epoch: 127 [320000/700160 (46%)] Train loss: 0.05205867636948824
+Train Epoch: 127 [384000/700160 (55%)] Train loss: 0.047225190605968234
+Train Epoch: 127 [448000/700160 (64%)] Train loss: 0.044685068000108005
+Train Epoch: 127 [512000/700160 (73%)] Train loss: 0.050356780737638475
+Train Epoch: 127 [576000/700160 (82%)] Train loss: 0.048903261851519345
+Train Epoch: 127 [640000/700160 (91%)] Train loss: 0.04170570962131023
+Current learning rate: 0.0005
+Train Epoch: 128 [0/700160 (0%)] Train loss: 0.0327925905585289
+Train Epoch: 128 [64000/700160 (9%)] Train loss: 0.0408498820848763
+Train Epoch: 128 [128000/700160 (18%)] Train loss: 0.04180300880223513
+Train Epoch: 128 [192000/700160 (27%)] Train loss: 0.04300074366852641
+Train Epoch: 128 [256000/700160 (37%)] Train loss: 0.046076446045190095
+Train Epoch: 128 [320000/700160 (46%)] Train loss: 0.042950097676366567
+Train Epoch: 128 [384000/700160 (55%)] Train loss: 0.04277190735563636
+Train Epoch: 128 [448000/700160 (64%)] Train loss: 0.0442269778251648
+Train Epoch: 128 [512000/700160 (73%)] Train loss: 0.04522310450673103
+Train Epoch: 128 [576000/700160 (82%)] Train loss: 0.047941161561757324
+Train Epoch: 128 [640000/700160 (91%)] Train loss: 0.04905035523697734
+Current learning rate: 0.0005
+Train Epoch: 129 [0/700160 (0%)] Train loss: 0.024336103349924088
+Train Epoch: 129 [64000/700160 (9%)] Train loss: 0.03793314414098859
+Train Epoch: 129 [128000/700160 (18%)] Train loss: 0.03756285006180406
+Train Epoch: 129 [192000/700160 (27%)] Train loss: 0.04006156485527754
+Train Epoch: 129 [256000/700160 (37%)] Train loss: 0.0406772786565125
+Train Epoch: 129 [320000/700160 (46%)] Train loss: 0.045843573138117794
+Train Epoch: 129 [384000/700160 (55%)] Train loss: 0.045329488329589364
+Train Epoch: 129 [448000/700160 (64%)] Train loss: 0.04361393442377448
+Train Epoch: 129 [512000/700160 (73%)] Train loss: 0.042724807001650336
+Train Epoch: 129 [576000/700160 (82%)] Train loss: 0.04235605675727129
+Train Epoch: 129 [640000/700160 (91%)] Train loss: 0.04239155428484082
+Current learning rate: 0.0005
+Train Epoch: 130 [0/700160 (0%)] Train loss: 0.03200649470090866
+Train Epoch: 130 [64000/700160 (9%)] Train loss: 0.04325523648411036
+Train Epoch: 130 [128000/700160 (18%)] Train loss: 0.04277555475011468
+Train Epoch: 130 [192000/700160 (27%)] Train loss: 0.0462793773598969
+Train Epoch: 130 [256000/700160 (37%)] Train loss: 0.042308434136211874
+Train Epoch: 130 [320000/700160 (46%)] Train loss: 0.04444814497604966
+Train Epoch: 130 [384000/700160 (55%)] Train loss: 0.04085105343721807
+Train Epoch: 130 [448000/700160 (64%)] Train loss: 0.04107305334880948
+Train Epoch: 130 [512000/700160 (73%)] Train loss: 0.0425006165727973
+Train Epoch: 130 [576000/700160 (82%)] Train loss: 0.04325173147022724
+Train Epoch: 130 [640000/700160 (91%)] Train loss: 0.04757940309122205
+Current learning rate: 0.0005
+Train Epoch: 131 [0/700160 (0%)] Train loss: 0.034547362476587296
+Train Epoch: 131 [64000/700160 (9%)] Train loss: 0.0375397483445704
+Train Epoch: 131 [128000/700160 (18%)] Train loss: 0.038352205250412226
+Train Epoch: 131 [192000/700160 (27%)] Train loss: 0.04064693078398705
+Train Epoch: 131 [256000/700160 (37%)] Train loss: 0.041050276830792425
+Train Epoch: 131 [320000/700160 (46%)] Train loss: 0.04363571980968118
+Train Epoch: 131 [384000/700160 (55%)] Train loss: 0.04090488776564598
+Train Epoch: 131 [448000/700160 (64%)] Train loss: 0.04326677302829921
+Train Epoch: 131 [512000/700160 (73%)] Train loss: 0.04225952297449112
+Train Epoch: 131 [576000/700160 (82%)] Train loss: 0.04690340327098966
+Train Epoch: 131 [640000/700160 (91%)] Train loss: 0.03880107685923576
+Test Epoch 131: Accuracy = 97.89% (146840/150000); Invalids = 0.00% (0/150000); Test loss = 0.0507645124926212
+exist -- acc: 97.95% (59638/60888); invalid: 0.00% (0/60888)
+shape -- acc: 99.58% (12837/12891); invalid: 0.00% (0/12891)
+number -- acc: 95.31% (33912/35579); invalid: 0.00% (0/35579)
+size -- acc: 99.74% (13037/13071); invalid: 0.00% (0/13071)
+material -- acc: 99.74% (13964/14001); invalid: 0.00% (0/14001)
+color -- acc: 99.13% (13452/13570); invalid: 0.00% (0/13570)
+Better accuracy found at epoch: 131
+Saving model
+Current learning rate: 0.0005
+Train Epoch: 132 [0/700160 (0%)] Train loss: 0.03977778181433678
+Train Epoch: 132 [64000/700160 (9%)] Train loss: 0.042560211047530175
+Train Epoch: 132 [128000/700160 (18%)] Train loss: 0.0385888671875
+Train Epoch: 132 [192000/700160 (27%)] Train loss: 0.044244979433715345
+Train Epoch: 132 [256000/700160 (37%)] Train loss: 0.04131708761677146
+Train Epoch: 132 [320000/700160 (46%)] Train loss: 0.04052817426621914
+Train Epoch: 132 [384000/700160 (55%)] Train loss: 0.040588398203253745
+Train Epoch: 132 [448000/700160 (64%)] Train loss: 0.04363745154812932
+Train Epoch: 132 [512000/700160 (73%)] Train loss: 0.04300804948434234
+Train Epoch: 132 [576000/700160 (82%)] Train loss: 0.04349706258624792
+Train Epoch: 132 [640000/700160 (91%)] Train loss: 0.039130002688616515
+Current learning rate: 0.0005
+Train Epoch: 133 [0/700160 (0%)] Train loss: 0.04275289177894592
+Train Epoch: 133 [64000/700160 (9%)] Train loss: 0.04416546786203981
+Train Epoch: 133 [128000/700160 (18%)] Train loss: 0.04325116518884897
+Train Epoch: 133 [192000/700160 (27%)] Train loss: 0.04033219316974282
+Train Epoch: 133 [256000/700160 (37%)] Train loss: 0.03928643271327019
+Train Epoch: 133 [320000/700160 (46%)] Train loss: 0.035936775393784044
+Train Epoch: 133 [384000/700160 (55%)] Train loss: 0.03951162774115801
+Train Epoch: 133 [448000/700160 (64%)] Train loss: 0.04270236514508724
+Train Epoch: 133 [512000/700160 (73%)] Train loss: 0.04214260004460812
+Train Epoch: 133 [576000/700160 (82%)] Train loss: 0.044635173343122
+Train Epoch: 133 [640000/700160 (91%)] Train loss: 0.040638457611203195
+Current learning rate: 0.0005
+Train Epoch: 134 [0/700160 (0%)] Train loss: 0.03681822866201401
+Train Epoch: 134 [64000/700160 (9%)] Train loss: 0.04028070749714971
+Train Epoch: 134 [128000/700160 (18%)] Train loss: 0.03817929737269878
+Train Epoch: 134 [192000/700160 (27%)] Train loss: 0.03825245512649417
+Train Epoch: 134 [256000/700160 (37%)] Train loss: 0.04188235726207495
+Train Epoch: 134 [320000/700160 (46%)] Train loss: 0.03855498462915421
+Train Epoch: 134 [384000/700160 (55%)] Train loss: 0.043192433062940835
+Train Epoch: 134 [448000/700160 (64%)] Train loss: 0.03993229066953063
+Train Epoch: 134 [512000/700160 (73%)] Train loss: 0.04284269142895937
+Train Epoch: 134 [576000/700160 (82%)] Train loss: 0.04320805717259645
+Train Epoch: 134 [640000/700160 (91%)] Train loss: 0.04172152081504464
+Current learning rate: 0.0005
+Train Epoch: 135 [0/700160 (0%)] Train loss: 0.020005900412797928
+Train Epoch: 135 [64000/700160 (9%)] Train loss: 0.041180489882826805
+Train Epoch: 135 [128000/700160 (18%)] Train loss: 0.03830411644652486
+Train Epoch: 135 [192000/700160 (27%)] Train loss: 0.03869184907525778
+Train Epoch: 135 [256000/700160 (37%)] Train loss: 0.03912955652922392
+Train Epoch: 135 [320000/700160 (46%)] Train loss: 0.04031202778220177
+Train Epoch: 135 [384000/700160 (55%)] Train loss: 0.04148505927994847
+Train Epoch: 135 [448000/700160 (64%)] Train loss: 0.037423414401710035
+Train Epoch: 135 [512000/700160 (73%)] Train loss: 0.040076395589858295
+Train Epoch: 135 [576000/700160 (82%)] Train loss: 0.042169314306229354
+Train Epoch: 135 [640000/700160 (91%)] Train loss: 0.04550793131813407
+Current learning rate: 0.0005
+Train Epoch: 136 [0/700160 (0%)] Train loss: 0.050493258982896805
+Train Epoch: 136 [64000/700160 (9%)] Train loss: 0.03944841019809246
+Train Epoch: 136 [128000/700160 (18%)] Train loss: 0.04113968763500452
+Train Epoch: 136 [192000/700160 (27%)] Train loss: 0.03699312966316939
+Train Epoch: 136 [256000/700160 (37%)] Train loss: 0.03864819323644042
+Train Epoch: 136 [320000/700160 (46%)] Train loss: 0.044200527425855396
+Train Epoch: 136 [384000/700160 (55%)] Train loss: 0.03913079524412751
+Train Epoch: 136 [448000/700160 (64%)] Train loss: 0.03962908005341888
+Train Epoch: 136 [512000/700160 (73%)] Train loss: 0.04319581564515829
+Train Epoch: 136 [576000/700160 (82%)] Train loss: 0.04706913972273469
+Train Epoch: 136 [640000/700160 (91%)] Train loss: 0.039237363897264003
+Current learning rate: 0.0005
+Train Epoch: 137 [0/700160 (0%)] Train loss: 0.04944866523146629
+Train Epoch: 137 [64000/700160 (9%)] Train loss: 0.03670328000560403
+Train Epoch: 137 [128000/700160 (18%)] Train loss: 0.03845832031220198
+Train Epoch: 137 [192000/700160 (27%)] Train loss: 0.03897345976904035
+Train Epoch: 137 [256000/700160 (37%)] Train loss: 0.04022058641538024
+Train Epoch: 137 [320000/700160 (46%)] Train loss: 0.03853949535638094
+Train Epoch: 137 [384000/700160 (55%)] Train loss: 0.03953121144324541
+Train Epoch: 137 [448000/700160 (64%)] Train loss: 0.03757781283929944
+Train Epoch: 137 [512000/700160 (73%)] Train loss: 0.04128984820097685
+Train Epoch: 137 [576000/700160 (82%)] Train loss: 0.045453245397657153
+Train Epoch: 137 [640000/700160 (91%)] Train loss: 0.04099416572600603
+Current learning rate: 0.0005
+Train Epoch: 138 [0/700160 (0%)] Train loss: 0.04299260303378105
+Train Epoch: 138 [64000/700160 (9%)] Train loss: 0.03812523102387786
+Train Epoch: 138 [128000/700160 (18%)] Train loss: 0.039151165038347244
+Train Epoch: 138 [192000/700160 (27%)] Train loss: 0.037572824638336895
+Train Epoch: 138 [256000/700160 (37%)] Train loss: 0.03512785602360964
+Train Epoch: 138 [320000/700160 (46%)] Train loss: 0.040308953747153285
+Train Epoch: 138 [384000/700160 (55%)] Train loss: 0.036137102376669644
+Train Epoch: 138 [448000/700160 (64%)] Train loss: 0.03977464377880097
+Train Epoch: 138 [512000/700160 (73%)] Train loss: 0.036279933173209426
+Train Epoch: 138 [576000/700160 (82%)] Train loss: 0.036836399175226686
+Train Epoch: 138 [640000/700160 (91%)] Train loss: 0.04788667781278491
+Current learning rate: 0.0005
+Train Epoch: 139 [0/700160 (0%)] Train loss: 0.04548201337456703
+Train Epoch: 139 [64000/700160 (9%)] Train loss: 0.036260830964893104
+Train Epoch: 139 [128000/700160 (18%)] Train loss: 0.037533787451684474
+Train Epoch: 139 [192000/700160 (27%)] Train loss: 0.041725679822266104
+Train Epoch: 139 [256000/700160 (37%)] Train loss: 0.048026993423700336
+Train Epoch: 139 [320000/700160 (46%)] Train loss: 0.03741581168025732
+Train Epoch: 139 [384000/700160 (55%)] Train loss: 0.03617732170969248
+Train Epoch: 139 [448000/700160 (64%)] Train loss: 0.034055963670834896
+Train Epoch: 139 [512000/700160 (73%)] Train loss: 0.04584729347378016
+Train Epoch: 139 [576000/700160 (82%)] Train loss: 0.04162999529391527
+Train Epoch: 139 [640000/700160 (91%)] Train loss: 0.037527028489857915
+Dataset reinitialized with batch size 640
+Current learning rate: 0.0005
+Train Epoch: 140 [0/700160 (0%)] Train loss: 0.034830547869205475
+Train Epoch: 140 [64000/700160 (9%)] Train loss: 0.03510960608720779
+Train Epoch: 140 [128000/700160 (18%)] Train loss: 0.04641794392839074
+Train Epoch: 140 [192000/700160 (27%)] Train loss: 0.03893442675471306
+Train Epoch: 140 [256000/700160 (37%)] Train loss: 0.03677166730165481
+Train Epoch: 140 [320000/700160 (46%)] Train loss: 0.035658472422510384
+Train Epoch: 140 [384000/700160 (55%)] Train loss: 0.0391615885682404
+Train Epoch: 140 [448000/700160 (64%)] Train loss: 0.036145095713436604
+Train Epoch: 140 [512000/700160 (73%)] Train loss: 0.038169888705015184
+Train Epoch: 140 [576000/700160 (82%)] Train loss: 0.04237519856542349
+Train Epoch: 140 [640000/700160 (91%)] Train loss: 0.04292779760435224
+Current learning rate: 0.0005
+Train Epoch: 141 [0/700160 (0%)] Train loss: 0.02026323601603508
+Train Epoch: 141 [64000/700160 (9%)] Train loss: 0.03462153429165483
+Train Epoch: 141 [128000/700160 (18%)] Train loss: 0.036182803381234405
+Train Epoch: 141 [192000/700160 (27%)] Train loss: 0.03927540373057127
+Train Epoch: 141 [256000/700160 (37%)] Train loss: 0.04489109594374895
+Train Epoch: 141 [320000/700160 (46%)] Train loss: 0.048384681586176155
+Train Epoch: 141 [384000/700160 (55%)] Train loss: 0.03866356734186411
+Train Epoch: 141 [448000/700160 (64%)] Train loss: 0.0363248610123992
+Train Epoch: 141 [512000/700160 (73%)] Train loss: 0.03940931720659137
+Train Epoch: 141 [576000/700160 (82%)] Train loss: 0.036941908560693265
+Train Epoch: 141 [640000/700160 (91%)] Train loss: 0.03572414180263877
+Test Epoch 141: Accuracy = 97.90% (146843/150000); Invalids = 0.00% (1/150000); Test loss = 0.0532144547142881
+exist -- acc: 98.27% (59836/60888); invalid: 0.00% (0/60888)
+shape -- acc: 99.63% (12843/12891); invalid: 0.00% (0/12891)
+number -- acc: 94.79% (33725/35579); invalid: 0.00% (0/35579)
+size -- acc: 99.79% (13043/13071); invalid: 0.00% (0/13071)
+material -- acc: 99.74% (13965/14001); invalid: 0.00% (0/14001)
+color -- acc: 98.98% (13431/13570); invalid: 0.01% (1/13570)
+Current learning rate: 0.0005
+Train Epoch: 142 [0/700160 (0%)] Train loss: 0.03791807219386101
+Train Epoch: 142 [64000/700160 (9%)] Train loss: 0.03684604499489069
+Train Epoch: 142 [128000/700160 (18%)] Train loss: 0.03476627988740802
+Train Epoch: 142 [192000/700160 (27%)] Train loss: 0.033327265121042726
+Train Epoch: 142 [256000/700160 (37%)] Train loss: 0.037994776982814074
+Train Epoch: 142 [320000/700160 (46%)] Train loss: 0.037151655908674
+Train Epoch: 142 [384000/700160 (55%)] Train loss: 0.03861215179786086
+Train Epoch: 142 [448000/700160 (64%)] Train loss: 0.0374839929305017
+Train Epoch: 142 [512000/700160 (73%)] Train loss: 0.0361974236741662
+Train Epoch: 142 [576000/700160 (82%)] Train loss: 0.038010836839675904
+Train Epoch: 142 [640000/700160 (91%)] Train loss: 0.038988920645788315
+Current learning rate: 0.0005
+Train Epoch: 143 [0/700160 (0%)] Train loss: 0.02366511896252632
+Train Epoch: 143 [64000/700160 (9%)] Train loss: 0.03406491879373789
+Train Epoch: 143 [128000/700160 (18%)] Train loss: 0.04173291491344571
+Train Epoch: 143 [192000/700160 (27%)] Train loss: 0.040706154294312
+Train Epoch: 143 [256000/700160 (37%)] Train loss: 0.03928306233137846
+Train Epoch: 143 [320000/700160 (46%)] Train loss: 0.040213348362594846
+Train Epoch: 143 [384000/700160 (55%)] Train loss: 0.041826244723051784
+Train Epoch: 143 [448000/700160 (64%)] Train loss: 0.04446923978626728
+Train Epoch: 143 [512000/700160 (73%)] Train loss: 0.038236084841191766
+Train Epoch: 143 [576000/700160 (82%)] Train loss: 0.04455660233274102
+Train Epoch: 143 [640000/700160 (91%)] Train loss: 0.039882632661610844
+Current learning rate: 0.0005
+Train Epoch: 144 [0/700160 (0%)] Train loss: 0.050186414271593094
+Train Epoch: 144 [64000/700160 (9%)] Train loss: 0.03331085985526443
+Train Epoch: 144 [128000/700160 (18%)] Train loss: 0.033533362336456776
+Train Epoch: 144 [192000/700160 (27%)] Train loss: 0.035786855798214674
+Train Epoch: 144 [256000/700160 (37%)] Train loss: 0.037381033413112164
+Train Epoch: 144 [320000/700160 (46%)] Train loss: 0.039955405443906786
+Train Epoch: 144 [384000/700160 (55%)] Train loss: 0.036935625150799754
+Train Epoch: 144 [448000/700160 (64%)] Train loss: 0.038393467497080565
+Train Epoch: 144 [512000/700160 (73%)] Train loss: 0.03816746287047863
+Train Epoch: 144 [576000/700160 (82%)] Train loss: 0.03604023650288582
+Train Epoch: 144 [640000/700160 (91%)] Train loss: 0.03472909251227975
+Current learning rate: 0.0005
+Train Epoch: 145 [0/700160 (0%)] Train loss: 0.0452670156955719
+Train Epoch: 145 [64000/700160 (9%)] Train loss: 0.03785958841443062
+Train Epoch: 145 [128000/700160 (18%)] Train loss: 0.03437090527266264
+Train Epoch: 145 [192000/700160 (27%)] Train loss: 0.037464550491422416
+Train Epoch: 145 [256000/700160 (37%)] Train loss: 0.042720020506531
+Train Epoch: 145 [320000/700160 (46%)] Train loss: 0.03649096969515085
+Train Epoch: 145 [384000/700160 (55%)] Train loss: 0.0381175971403718
+Train Epoch: 145 [448000/700160 (64%)] Train loss: 0.036129270195960995
+Train Epoch: 145 [512000/700160 (73%)] Train loss: 0.037012359723448754
+Train Epoch: 145 [576000/700160 (82%)] Train loss: 0.041001439839601514
+Train Epoch: 145 [640000/700160 (91%)] Train loss: 0.041334888879209754
+Current learning rate: 0.0005
+Train Epoch: 146 [0/700160 (0%)] Train loss: 0.021113725379109383
+Train Epoch: 146 [64000/700160 (9%)] Train loss: 0.03616117483004928
+Train Epoch: 146 [128000/700160 (18%)] Train loss: 0.039287532810121775
+Train Epoch: 146 [192000/700160 (27%)] Train loss: 0.03581288035959005
+Train Epoch: 146 [256000/700160 (37%)] Train loss: 0.04030404383316636
+Train Epoch: 146 [320000/700160 (46%)] Train loss: 0.04274123936891556
+Train Epoch: 146 [384000/700160 (55%)] Train loss: 0.037304834499955176
+Train Epoch: 146 [448000/700160 (64%)] Train loss: 0.03719991097226739
+Train Epoch: 146 [512000/700160 (73%)] Train loss: 0.03719154441729188
+Train Epoch: 146 [576000/700160 (82%)] Train loss: 0.036525887791067364
+Train Epoch: 146 [640000/700160 (91%)] Train loss: 0.03554587842896581
+Current learning rate: 0.0005
+Train Epoch: 147 [0/700160 (0%)] Train loss: 0.02279653772711754
+Train Epoch: 147 [64000/700160 (9%)] Train loss: 0.0360056072100997
+Train Epoch: 147 [128000/700160 (18%)] Train loss: 0.041283357944339516
+Train Epoch: 147 [192000/700160 (27%)] Train loss: 0.033429408678784966
+Train Epoch: 147 [256000/700160 (37%)] Train loss: 0.040702243596315385
+Train Epoch: 147 [320000/700160 (46%)] Train loss: 0.04168840812519193
+Train Epoch: 147 [384000/700160 (55%)] Train loss: 0.03516834396868944
+Train Epoch: 147 [448000/700160 (64%)] Train loss: 0.035873455246910456
+Train Epoch: 147 [512000/700160 (73%)] Train loss: 0.04042199555784464
+Train Epoch: 147 [576000/700160 (82%)] Train loss: 0.03495205054059625
+Train Epoch: 147 [640000/700160 (91%)] Train loss: 0.03529539457522333
+Current learning rate: 0.0005
+Train Epoch: 148 [0/700160 (0%)] Train loss: 0.028266489505767822
+Train Epoch: 148 [64000/700160 (9%)] Train loss: 0.03484447352588177
+Train Epoch: 148 [128000/700160 (18%)] Train loss: 0.03913638284429908
+Train Epoch: 148 [192000/700160 (27%)] Train loss: 0.03692173281684518
+Train Epoch: 148 [256000/700160 (37%)] Train loss: 0.0410159346088767
+Train Epoch: 148 [320000/700160 (46%)] Train loss: 0.04104290144518018
+Train Epoch: 148 [384000/700160 (55%)] Train loss: 0.044274537283927204
+Train Epoch: 148 [448000/700160 (64%)] Train loss: 0.03480718290433288
+Train Epoch: 148 [512000/700160 (73%)] Train loss: 0.03648920055478811
+Train Epoch: 148 [576000/700160 (82%)] Train loss: 0.038222570810467
+Train Epoch: 148 [640000/700160 (91%)] Train loss: 0.03468507926911116
+Current learning rate: 0.0005
+Train Epoch: 149 [0/700160 (0%)] Train loss: 0.03786459565162659
+Train Epoch: 149 [64000/700160 (9%)] Train loss: 0.033069467656314376
+Train Epoch: 149 [128000/700160 (18%)] Train loss: 0.03495431019924581
+Train Epoch: 149 [192000/700160 (27%)] Train loss: 0.036971077248454096
+Train Epoch: 149 [256000/700160 (37%)] Train loss: 0.037135374397039414
+Train Epoch: 149 [320000/700160 (46%)] Train loss: 0.037674583047628406
+Train Epoch: 149 [384000/700160 (55%)] Train loss: 0.035043039005249736
+Train Epoch: 149 [448000/700160 (64%)] Train loss: 0.03247535755857825
+Train Epoch: 149 [512000/700160 (73%)] Train loss: 0.04499480865895748
+Train Epoch: 149 [576000/700160 (82%)] Train loss: 0.03918234338983893
+Train Epoch: 149 [640000/700160 (91%)] Train loss: 0.037470683995634316
+Current learning rate: 0.0005
+Train Epoch: 150 [0/700160 (0%)] Train loss: 0.03478778153657913
+Train Epoch: 150 [64000/700160 (9%)] Train loss: 0.03441023706458509
+Train Epoch: 150 [128000/700160 (18%)] Train loss: 0.03400299390777946
+Train Epoch: 150 [192000/700160 (27%)] Train loss: 0.03613835588097572
+Train Epoch: 150 [256000/700160 (37%)] Train loss: 0.035934926327317956
+Train Epoch: 150 [320000/700160 (46%)] Train loss: 0.04225089345127344
+Train Epoch: 150 [384000/700160 (55%)] Train loss: 0.03954769341275096
+Train Epoch: 150 [448000/700160 (64%)] Train loss: 0.03924156768247485
+Train Epoch: 150 [512000/700160 (73%)] Train loss: 0.03257592057809234
+Train Epoch: 150 [576000/700160 (82%)] Train loss: 0.034822833370417354
+Train Epoch: 150 [640000/700160 (91%)] Train loss: 0.03548080511391163
+Current learning rate: 0.0005
+Train Epoch: 151 [0/700160 (0%)] Train loss: 0.03897743299603462
+Train Epoch: 151 [64000/700160 (9%)] Train loss: 0.033264020290225745
+Train Epoch: 151 [128000/700160 (18%)] Train loss: 0.0370770051702857
+Train Epoch: 151 [192000/700160 (27%)] Train loss: 0.037992073725908994
+Train Epoch: 151 [256000/700160 (37%)] Train loss: 0.03955486880615353
+Train Epoch: 151 [320000/700160 (46%)] Train loss: 0.03494214307516813
+Train Epoch: 151 [384000/700160 (55%)] Train loss: 0.04296465877443552
+Train Epoch: 151 [448000/700160 (64%)] Train loss: 0.036352271642535926
+Train Epoch: 151 [512000/700160 (73%)] Train loss: 0.03534921802580357
+Train Epoch: 151 [576000/700160 (82%)] Train loss: 0.036092102583497765
+Train Epoch: 151 [640000/700160 (91%)] Train loss: 0.03447787279263139
+Test Epoch 151: Accuracy = 98.15% (147219/150000); Invalids = 0.00% (1/150000); Test loss = 0.04466004972445204
+exist -- acc: 98.22% (59803/60888); invalid: 0.00% (1/60888)
+shape -- acc: 99.74% (12857/12891); invalid: 0.00% (0/12891)
+number -- acc: 95.96% (34143/35579); invalid: 0.00% (0/35579)
+size -- acc: 99.67% (13028/13071); invalid: 0.00% (0/13071)
+material -- acc: 99.79% (13972/14001); invalid: 0.00% (0/14001)
+color -- acc: 98.87% (13416/13570); invalid: 0.00% (0/13570)

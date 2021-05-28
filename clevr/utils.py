@@ -66,6 +66,44 @@ def to_dictionary_indexes(dictionary, sentence):
     idxs = torch.LongTensor([dictionary[w] for w in split])
     return idxs
 
+def collate_samples(batch):
+    """
+    Used by DatasetLoader to merge together multiple samples into one mini-batch.
+    """
+    batch_size = len(batch)
+
+    images = [d['image'] for d in batch]
+    answers = [d['answer'] for d in batch]
+    questions = [d['question'] for d in batch]
+
+    # questions are not fixed length: they must be padded to the maximum length
+    # in this batch, in order to be inserted in a tensor
+    max_len = max(map(len, questions))
+
+    padded_questions = torch.LongTensor(batch_size, max_len).zero_()
+    for i, q in enumerate(questions):
+        padded_questions[i, :len(q)] = q
+        
+    max_len = 12 # will need to change this 
+    #even object matrices should be padded (they are variable length)
+    padded_objects = torch.FloatTensor(batch_size, max_len, images[0].size()[1]).zero_()
+    for i, o in enumerate(images):
+        padded_objects[i, :o.size()[0], :] = o
+    images = padded_objects
+    
+    # collated_batch = dict(
+    #     image=torch.stack(images),
+    #     answer=torch.stack(answers),
+    #     question=torch.stack(padded_questions)
+    # )
+    collated_batch = dict(
+        image=images,
+        answer=torch.stack(answers),
+        question=padded_questions
+    )
+    return collated_batch
+
+
 def tokenize(sentence):
     # punctuation should be separated from the words
     s = re.sub('([.,;:!?()])', r' \1 ', sentence)
@@ -77,3 +115,37 @@ def tokenize(sentence):
     # normalize all words to lowercase
     lower = [w.lower() for w in split]
     return lower
+
+def load_tensor_data(data_batch, cuda, invert_questions):
+    qst = data_batch['question']
+    if invert_questions:
+        # invert question indexes in this batch
+        qst_len = qst.size()[1]
+        qst = qst.index_select(1, torch.arange(qst_len - 1, -1, -1).long())
+
+    img = data_batch['image']
+    label = data_batch['answer']
+    if cuda:
+        img, qst, label = img.cuda(), qst.cuda(), label.cuda()
+
+    label = (label - 1).squeeze(1)
+    return img, qst, label
+
+# def load_tensor_data(data_batch, cuda, invert_questions, volatile=False):
+#     # prepare input
+#     var_kwargs = dict(volatile=True) if volatile else dict(requires_grad=False)
+
+#     qst = data_batch['question']
+#     if invert_questions:
+#         # invert question indexes in this batch
+#         qst_len = qst.size()[1]
+#         qst = qst.index_select(1, torch.arange(qst_len - 1, -1, -1).long())
+
+#     img = torch.autograd.Variable(data_batch['image'], **var_kwargs)
+#     qst = torch.autograd.Variable(qst, **var_kwargs)
+#     label = torch.autograd.Variable(data_batch['answer'], **var_kwargs)
+#     if cuda:
+#         img, qst, label = img.cuda(), qst.cuda(), label.cuda()
+
+#     label = (label - 1).squeeze(1)
+#     return img, qst, label

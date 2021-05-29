@@ -195,8 +195,8 @@ def main(args):
     print('Word dictionary completed!')
 
     print('Initializing CLEVR dataset...')
-    clevr_dataset_train = ClevrDataset(args.clevr_dir, True, dictionaries)
-    clevr_dataset_test = ClevrDataset(args.clevr_dir, False, dictionaries)
+    clevr_dataset_train = ClevrDataset(args.clevr_dir, True, dictionaries, args.cogen)
+    clevr_dataset_test = ClevrDataset(args.clevr_dir, False, dictionaries, args.cogen)
     print('CLEVR dataset initialized!')
 
     # Build the model
@@ -299,6 +299,8 @@ def main(args):
 if __name__ == '__main__':
     # Training settings
     parser = argparse.ArgumentParser(description='PyTorch Relational-Network CLEVR')
+    parser.add_argument('--cogen', type=bool, default=False,
+                        help='use different data for validation')
     parser.add_argument('--batch-size', type=int, default=640, metavar='N',
                         help='input batch size for training (default: 640)')
     parser.add_argument('--test-batch-size', type=int, default=640,

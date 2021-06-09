@@ -51,7 +51,7 @@ class RelationalLayer(RelationalLayerBase):
         super().__init__(in_size, out_size, qst_size, hyp)
 
         self.quest_inject_position = hyp["question_injection_position"]
-        self.in_size = in_size              # in_size is the size of the object pair vector (7+7)
+        self.in_size = in_size              # in_size is the size of the object pair vector
 
 	    #create all g layers
         self.g_layers = []

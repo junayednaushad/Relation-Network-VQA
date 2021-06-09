@@ -1,3 +1,10 @@
+/clevr/imgs
+/clevr/models
+/clevr/test_results
+/gqa/data
+/gqa/models
+/gqa/test_results
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

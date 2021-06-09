@@ -6,25 +6,9 @@ import re
 import torch
 from tqdm import tqdm
 
-classes = {
-            'number':['0','1','2','3','4','5','6','7','8','9','10'],
-            'material':['rubber','metal'],
-            'color':['cyan','blue','yellow','purple','red','green','gray','brown'],
-            'shape':['sphere','cube','cylinder'],
-            'size':['large','small'],
-            'exist':['yes','no']
-        }
-def build_dictionaries(clevr_dir):
-
-    def compute_class(answer):
-        for name,values in classes.items():
-            if answer in values:
-                return name
-        
-        raise ValueError('Answer {} does not belong to a known class'.format(answer))
-        
-        
-    cached_dictionaries = os.path.join(clevr_dir, 'questions', 'CLEVR_built_dictionaries.pkl')
+def build_dictionaries(gqa_dir):
+    
+    cached_dictionaries = os.path.join(gqa_dir, 'GQA_built_dictionaries.pkl')
     if os.path.exists(cached_dictionaries):
         print('==> using cached dictionaries: {}'.format(cached_dictionaries))
         with open(cached_dictionaries, 'rb') as f:
@@ -32,38 +16,61 @@ def build_dictionaries(clevr_dir):
             
     quest_to_ix = {}
     answ_to_ix = {}
-    answ_ix_to_class = {}
-    json_train_filename = os.path.join(clevr_dir, 'questions', 'CLEVR_trainA_questions.json')
+    json_train_filename = os.path.join(gqa_dir, 'train_balanced_questions.json')
     #load all words from all training data
     with open(json_train_filename, "r") as f:
-        questions = json.load(f)['questions']
-        for q in tqdm(questions):
-            question = tokenize(q['question'])
-            answer = q['answer']
-            #pdb.set_trace()
+        train_q = json.load(f)
+        for q in tqdm(train_q):
+            question = tokenize(train_q[q]['question'])
+            answer = train_q[q]['answer']
             for word in question:
                 if word not in quest_to_ix:
                     quest_to_ix[word] = len(quest_to_ix)+1 #one based indexing; zero is reserved for padding
             
             a = answer.lower()
             if a not in answ_to_ix:
-                    ix = len(answ_to_ix)+1
-                    answ_to_ix[a] = ix
-                    answ_ix_to_class[ix] = compute_class(a)
+                ix = len(answ_to_ix)+1
+                answ_to_ix[a] = ix
 
-    ret = (quest_to_ix, answ_to_ix, answ_ix_to_class)    
+        quest_to_ix['UNK'] = len(quest_to_ix)+1
+        answ_to_ix['UNK'] = len(answ_to_ix)+1
+
+    names = {}
+    attributes = {}
+    train_sg_filename = os.path.join(gqa_dir, 'train_sceneGraphs.json')
+    with open(train_sg_filename, 'r') as f:
+        train_sg = json.load(f)
+        for sg in train_sg:
+            objects = train_sg[sg]['objects']
+            for obj in objects:
+                name = train_sg[sg]['objects'][obj]['name']
+                if name not in names:
+                    names[name] = len(names)
+                obj_attributes = train_sg[sg]['objects'][obj]['attributes']
+                for attr in obj_attributes:
+                    if attr not in attributes:
+                        attributes[attr] = len(attributes)
+
+    names['UNK'] = len(names)
+    attributes['UNK'] = len(attributes)
+    
+    ret = (quest_to_ix, answ_to_ix, names, attributes)    
     with open(cached_dictionaries, 'wb') as f:
         pickle.dump(ret, f)
 
     return ret
 
-def to_dictionary_indexes(dictionary, sentence):
+def to_dictionary_indexes(dictionary, sentence, to_tokenize=False):
     """
     Outputs indexes of the dictionary corresponding to the words in the sequence.
     Case insensitive.
     """
-    split = tokenize(sentence)
-    idxs = torch.LongTensor([dictionary[w] for w in split])
+    if to_tokenize:
+        split = tokenize(sentence)
+    else:
+        # don't tokenize answers
+        split = [sentence]
+    idxs = torch.LongTensor([dictionary[w] if w in dictionary else dictionary['UNK'] for w in split])
     return idxs
 
 def collate_samples(batch):
@@ -84,7 +91,7 @@ def collate_samples(batch):
     for i, q in enumerate(questions):
         padded_questions[i, :len(q)] = q
         
-    max_len = 12 # will need to change this 
+    max_len = 46 # will need to change this 
     #even object matrices should be padded (they are variable length)
     padded_objects = torch.FloatTensor(batch_size, max_len, images[0].size()[1]).zero_()
     for i, o in enumerate(images):
